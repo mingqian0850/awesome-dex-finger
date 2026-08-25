@@ -43,6 +43,7 @@
 | 论文 | 机构 | 年份 | 链接 | 贡献 |
 | --- | --- | --- | --- | --- |
 | DexVLA: VLM with Plug-In Diffusion Expert | — | 2025 (CoRL) | [arXiv:2502.05855](https://arxiv.org/abs/2502.05855) | 双臂灵巧零微调泛化 |
+| DexGraspVLA: VLA Framework for General Dexterous Grasping | — | 2025 | [arXiv:2502.20900](https://arxiv.org/abs/2502.20900) | VLA 框架下的通用灵巧抓取 |
 | GR00T N1: An Open Foundation Model for Generalist Humanoid Robots | NVIDIA | 2025 | [arXiv:2503.14734](https://arxiv.org/abs/2503.14734) | 开源人形基础模型，支持灵巧手双腕操作 |
 | RDT-1B: Diffusion Transformer 双臂操作基础模型 | Tsinghua | 2025 (ICLR) | [arXiv:2410.07864](https://arxiv.org/abs/2410.07864) | 1.2B 参数，128Hz 高频控制 |
 | π0: A Vision-Language-Action Flow Model | Physical Intelligence | 2024 | [arXiv:2410.24164](https://arxiv.org/abs/2410.24164) | 3.3B 流匹配 VLA，灵巧双手操作 |
