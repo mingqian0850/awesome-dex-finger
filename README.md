@@ -17,6 +17,7 @@
 | [docs/papers.md](docs/papers.md) | SOTA 论文总表（硬件 / 学习与控制 / 数据集，按年份分组） |
 | [docs/hardware.md](docs/hardware.md) | 灵巧手硬件平台盘点（商用 + 开源） |
 | [docs/learning.md](docs/learning.md) | 学习与控制方法详解（RL / 模仿学习 / 遥操作 / VLA） |
+| [docs/control-and-data-collection.md](docs/control-and-data-collection.md) | 控制方法与数据采集方法（遥操作 / 视频学习 / 仿真合成） |
 | [docs/datasets.md](docs/datasets.md) | 数据集与基准平台 |
 | [docs/open-source.md](docs/open-source.md) | 开源项目清单（硬件 / 仿真 / 软件） |
 | [awesome-lists.md](awesome-lists.md) | 相关 Awesome 列表导航 |
