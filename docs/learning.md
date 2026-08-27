@@ -39,6 +39,9 @@
 | OpenVLA | Stanford / Google DeepMind | 2024 (CoRL) | [MLR](https://proceedings.mlr.press/v270/kim25c.html) | 开源 7B VLA 基线，广泛复用/微调 |
 | DexVLA | — | 2025 (CoRL) | [arXiv:2502.05855](https://arxiv.org/abs/2502.05855) | VLM + plug-in diffusion expert，双臂灵巧平台零微调操作新物体 |
 | DexGraspVLA | — | 2025 | [arXiv:2502.20900](https://arxiv.org/abs/2502.20900) | VLA 框架下的通用灵巧抓取 |
+| π0.5 | Physical Intelligence | 2025 | [arXiv:2504.16054](https://arxiv.org/abs/2504.16054) · [openpi](https://github.com/Physical-Intelligence/openpi) | π0 升级：开放世界泛化，开源权重 |
+| GR00T N1.5 | NVIDIA | 2025-2026 | 见 [NVIDIA 博客](https://developer.nvidia.com/blog/accelerate-generalist-humanoid-robot-development-with-nvidia-isaac-gr00t-n1/) | N1 升级：Eagle 2.5 VLM + DiT flow matching 双系统 |
+| Helix | Figure AI | 2025 | [figure.ai](https://www.figure.ai/news/helix-02-bedroom-tidy) | 快慢脑双系统 VLA，2025 年部署于 Figure 02 |
 
 ## 4. In-hand 灵巧操作代表性工作
 
