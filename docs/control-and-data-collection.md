@@ -127,7 +127,7 @@
 
 | 模型 | 机构 | 年份 | 说明 |
 | --- | --- | --- | --- |
-| [π0.5](https://arxiv.org/abs/2504.16054) | Physical Intelligence | 2025 | π0 升级版，开放世界泛化，开源实现 [openpi](https://github.com/ROBOTIS-GIT/openpi) |
+| [π0.5](https://arxiv.org/abs/2504.16054) | Physical Intelligence | 2025 | π0 升级版，开放世界泛化，开源实现 [openpi](https://github.com/Physical-Intelligence/openpi) |
 | GR00T N1.5 | NVIDIA | 2025-2026 | N1 升级：Eagle 2.5 VLM + DiT flow matching 双系统 |
 | [Helix](https://www.figure.ai/news/helix-02-bedroom-tidy) | Figure AI | 2025 | 快慢脑双系统 VLA，已进入 Helix 02 迭代 |
 | [UniHM](https://mlanthology.org/iclr/2026/zhang2026iclr-unihm/) | — | ICLR 2026 | 统一灵巧手操作的 VLM 框架 |
