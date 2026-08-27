@@ -147,6 +147,9 @@
 | HOMIE | 上海AI实验室 | 2025 | 同构外骨骼座舱 + 人形全身遥操作（loco-manipulation），开源 | [ar5iv](https://ar5iv.labs.arxiv.org/html/2502.13013) · [OpenHomie](https://github.com/InternRobotics/OpenHomie) |
 | DOGlove | 清华 | RSS 2025 | 低成本开源**力反馈**动捕手套 | [项目页](https://do-glove.github.io/) |
 | ExoStart | Google DeepMind | 2025 | 传感化外骨骼演示 + few-shot 高效学习 | [scirate](https://scirate.com/arxiv/2506.11775) |
+| CaFe-TeleVision | — | 2025 | Open-TeleVision 粗到细、人体工学优化版 | [Semantic Scholar](https://www.semanticscholar.org/paper/CaFe-TeleVision%3A-A-Coarse-to-Fine-Teleoperation-for-Tang-Chen/5e303a1515045172e020ff570db2174cd354d529) |
+| IntuitCap | — | 2025 | 60-DOF 上半身动捕系统，全身数据采集 | [IEEE](https://xplorestaging.ieee.org/document/11355263) |
+| RealDexUMI | — | 2026 | 可穿戴 UMI：腕部相机 + 手套，免外部动捕与 SLAM（arXiv ID 未能独立验证，见项目页） | 见项目页 |
 
 ### 4. 触觉数据采集（视触融合）
 
@@ -161,8 +164,8 @@
 
 - **真机数据飞轮（开源基准）**：AgiBot World Colosseo（百万级真机轨迹、217 任务、IROS 2025，[项目页](https://opendrivelab.com/AgiBot-World/)）；[AgiBot World 2026 世界模型数据集](https://www.agibot.com.cn/article/315/detail/167.html)（行业首个面向世界模型的具身数据集）
 - **合成数据第二引擎**：NVIDIA GR00T N1.5 + [GR00T-Mimic 合成操作运动生成](https://nvidia-cosmos.github.io/cosmos-cookbook/recipes/inference/transfer1/gr00t-mimic/inference.html) + [世界基础模型生成合成轨迹](https://developer.nvidia.com/blog/enhance-robot-learning-with-synthetic-trajectory-data-generated-by-world-foundation-models/) + R²D² 工作流；NVIDIA 将物理 AI 定义为"数据工厂"业务（NVIDIA×LG 共建）
-- **VLA 反向重塑数据需求**：Figure Helix 用约 **1000 小时高质量遥操作数据**训出双系统 VLA；[Project Go-Big](https://www.figure.ai/news/project-go-big) 用互联网视频预训练压缩真机数据需求；1X 设 World Model Lab
-- **视频学习主流化**：[EgoDex](https://huggingface.co/papers/2505.11709)（ICLR 2026，数万小时 egocentric 视频预训练跨具身手模型）、[OSCAR](https://wuzy2115.github.io/oscar-project-page/)（CMU，骨架条件世界动作模型统一人类+机器人视频）、ViViDex、DexNDM（银河通用&清华）
+- **VLA 反向重塑数据需求**：Figure Helix 用约 **1000 小时高质量遥操作数据**训出双系统 VLA（S7 慢语义 + S8 快动作）；[Project Go-Big](https://www.figure.ai/news/project-go-big) 用互联网视频预训练压缩真机数据需求；1X 设 [World Model Lab](https://www.1x.tech/discover/1x-world-model-lab)（"车队学习 > 制造"）；π0.5 走"部署即采集"商业数据飞轮
+- **视频学习主流化**：[EgoDex](https://huggingface.co/papers/2505.11709)（ICLR 2026，数万小时 egocentric 视频预训练跨具身手模型）、[OSCAR](https://wuzy2115.github.io/oscar-project-page/)（CMU，骨架条件世界动作模型统一人类+机器人视频）、ViViDex（RSS 2024，第三人称视频）、DexMan（人类+生成视频联合学习）、DemoBot（第三人称视频学双手操作）、DexNDM（银河通用&清华，神经动力学模型从视频学习）
 
 ### 6. 前沿共识（2025-2026）
 
