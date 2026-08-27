@@ -133,19 +133,44 @@
 | [UniHM](https://mlanthology.org/iclr/2026/zhang2026iclr-unihm/) | — | ICLR 2026 | 统一灵巧手操作的 VLM 框架 |
 | [RLDX-1](https://www.rlwrld.ai/en/rldx-1) | RLWRLD（韩国） | 2026 | "灵巧优先"（Dexterity-First）机器手基础模型，GTC Taipei 2026 发布 |
 
-### 3. 数据采集：数据飞轮 + 合成数据 + 视频学习并行
+### 3. 数据采集系统：从"实验室"到"数据工厂"
 
-- **数据飞轮**：遥操作集群采集（智元 AgiBot World 百万级、Figure/1X 数据工厂）+ 模型反哺（用策略自动采集难例）
-- **合成数据**：[NVIDIA Isaac GR00T 合成管线](https://developer.nvidia.com/blog/building-a-synthetic-motion-generation-pipeline-for-humanoid-robot-learning/)（LLM/程序化生成动作 + 物理仿真验证）成为人形数据标配
-- **视频学习**：EgoDex 式第一视角视频持续扩展；外骨骼采集（MILE 等）提供运动学对齐的传感器化演示
-- **触觉数据**：视触融合采集兴起（Octopi 类模型的数据需求）
+| 系统 | 机构 | 年份 | 特点 | 链接 |
+| --- | --- | --- | --- | --- |
+| AnyTeleop v3 | UCSD/PKU | 2025 更新 | 视觉标记手部姿态通用遥操作，免专用硬件，仍是开源基线 | [arXiv HTML](https://arxiv.org/html/2307.04577v3) |
+| Open-TeleVision | UCSD | CoRL 2024 | Quest 3 VR + 主动视觉反馈，跨洲际双臂+手采集，被宇树等采用 | [GitHub](https://github.com/OpenTeleVision/TeleVision) |
+| UMI on Legs | Columbia/Stanford | 2025 | UMI 接口装轮式底盘，移动采集 | [GitHub](https://github.com/real-stanford/umi-on-legs) |
+| Fast-UMI + FastUMI-100K | 上海AI实验室 | CoRL 2025 | 硬件无关 UMI + 10 万级开源 UMI 风格数据集 | [alphaXiv](https://www.alphaxiv.org/abs/2409.19499v2) · [FastUMI-100K](https://ar5iv.labs.arxiv.org/html/2510.08022) |
+| DexCap | Stanford | RSS 2024 | 磁动捕手套 + 腕部动捕 + 点云，"人戴手套采集"路线开创者 | [项目页](https://dex-cap.github.io/) · [GitHub](https://github.com/j96w/dexcap/) |
+| DexWild（DexCap 下一代） | DexCap 团队 | RSS 2026 | 户外/真实环境动捕采集 + 人机联合训练 | [HF Papers](https://huggingface.co/papers/2505.07813) |
+| MILE | — | 2025-12 | **机械同构外骨骼** + 指尖视触觉，采集侧与部署手同构，策略零缝隙迁移 | [HF Papers](https://huggingface.co/papers/2512.00324) |
+| HOMIE | 上海AI实验室 | 2025 | 同构外骨骼座舱 + 人形全身遥操作（loco-manipulation），开源 | [ar5iv](https://ar5iv.labs.arxiv.org/html/2502.13013) · [OpenHomie](https://github.com/InternRobotics/OpenHomie) |
+| DOGlove | 清华 | RSS 2025 | 低成本开源**力反馈**动捕手套 | [项目页](https://do-glove.github.io/) |
+| ExoStart | Google DeepMind | 2025 | 传感化外骨骼演示 + few-shot 高效学习 | [scirate](https://scirate.com/arxiv/2506.11775) |
 
-### 4. 前沿共识（2025-2026）
+### 4. 触觉数据采集（视触融合）
+
+| 系统 | 年份 | 特点 | 链接 |
+| --- | --- | --- | --- |
+| OpenTouch | 2025-12 | 大规模**全手触觉**数据：手部大面积触觉阵列被动接触采集 | [arXiv:2512.16842](https://arxiv.org/html/2512.16842) |
+| AnyTouch | ICLR 2025 | 跨多种视触传感器（GelSight/Digit 等）的统一触觉表示预训练 | [GitHub](https://github.com/GeWu-Lab/AnyTouch) |
+| AnyRotate | CoRL 2025 | 触觉合成数据 + sim-to-real 的手内旋转 | [PMLR](https://proceedings.mlr.press/v270/yang25c.html) |
+| ManiFeel | 2025-2026 | 视触操作策略学习基准 | [Semantic Scholar](https://www.semanticscholar.org/paper/ManiFeel%3A-Benchmarking-and-Understanding-Policy-Luu-Zhou/a521740d5d3453564c165bd6d6f4927e0470b86e) |
+
+### 5. 数据飞轮：大规模真机 + 合成 + 视频三线并行
+
+- **真机数据飞轮（开源基准）**：AgiBot World Colosseo（百万级真机轨迹、217 任务、IROS 2025，[项目页](https://opendrivelab.com/AgiBot-World/)）；[AgiBot World 2026 世界模型数据集](https://www.agibot.com.cn/article/315/detail/167.html)（行业首个面向世界模型的具身数据集）
+- **合成数据第二引擎**：NVIDIA GR00T N1.5 + [GR00T-Mimic 合成操作运动生成](https://nvidia-cosmos.github.io/cosmos-cookbook/recipes/inference/transfer1/gr00t-mimic/inference.html) + [世界基础模型生成合成轨迹](https://developer.nvidia.com/blog/enhance-robot-learning-with-synthetic-trajectory-data-generated-by-world-foundation-models/) + R²D² 工作流；NVIDIA 将物理 AI 定义为"数据工厂"业务（NVIDIA×LG 共建）
+- **VLA 反向重塑数据需求**：Figure Helix 用约 **1000 小时高质量遥操作数据**训出双系统 VLA；[Project Go-Big](https://www.figure.ai/news/project-go-big) 用互联网视频预训练压缩真机数据需求；1X 设 World Model Lab
+- **视频学习主流化**：[EgoDex](https://huggingface.co/papers/2505.11709)（ICLR 2026，数万小时 egocentric 视频预训练跨具身手模型）、[OSCAR](https://wuzy2115.github.io/oscar-project-page/)（CMU，骨架条件世界动作模型统一人类+机器人视频）、ViViDex、DexNDM（银河通用&清华）
+
+### 6. 前沿共识（2025-2026）
 
 1. **手部感知默认栈 = RGB 基础模型（HaMeR/WiLoR）+ 腕部深度点云 + 指尖触觉**，单一传感器不再够用
 2. **控制默认栈 = VLA 基础模型微调**（π0.5/GR00T N1.5/Helix），RL 退居"技能级"补充
-3. **数据默认栈 = 仿真合成（GR00T 管线）+ 遥操作集群 + 视频学习三条腿走路**
-4. **触觉成为下一个"模态"**：Octopi-1.5 等视触语言模型预示"触觉 LLM"方向
+3. **采集硬件 SOTA = 外骨骼/手套 + 视触融合**（MILE/DOGlove/DexWild 路线：采集装置与部署手同构、传感化、户外化）
+4. **数据默认栈 = 合成（GR00T）+ 遥操作集群 + 视频学习三线并行**；"约千小时高质量遥操作 + 视频预训练"成为可复制配方（Helix 实证）
+5. **触觉成为下一个"模态"**：Octopi-1.5 视触语言模型 + OpenTouch 全手触觉数据预示"触觉 LLM"方向
 
 ---
 
