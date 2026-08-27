@@ -112,16 +112,61 @@
 
 > 本节回答"现在最前沿的方法是什么"。内容基于 2026-08 调研，链接均已核实。
 
-### 1. 手部感知：从"姿态估计"到"基础模型 + 多模态"
+### 1. 手部感知：从"姿态估计"到"基础模型 + 3DGS + 多模态"
 
-| 方向 | 前沿方法 | 说明 |
-| --- | --- | --- |
-| RGB 手部基础模型 | [HaMeR](https://geopavlakos.github.io/hamer/)（Meta, CVPR 2024）· [WiLoR](https://arxiv.org/abs/2409.12259)（CVPR 2025） | 大规模预训练的手部网格重建/定位基础模型，野外鲁棒，取代传统深度方案成为手姿态估计默认选择 |
-| 4D 手部运动 | [Dyn-HaMR](https://github.com/ZhengdiYu/Dyn-HaMR) | 动态相机下的 4D 交互手部运动恢复 |
-| RGB-D 重建 | HandRT | 单目 RGB-D 手形+外观重建与姿态跟踪 |
-| 视触语言模型 | [Octopi-1.5](https://arxiv.org/abs/2507.09985)（RSS 2025） | 视觉-触觉-语言模型：触觉成为"模态"进入基础模型 |
-| 视觉-触觉融合 | [In-Hand Object Pose Estimation via Visual-Tactile Fusion](https://ui.adsabs.harvard.edu/abs/2025arXiv250610787N/abstract)（DFKI 2025）· [Tactile-Conditioned Diffusion Policy](https://arxiv.org/abs/2510.13324) | 遮挡下手-物位姿与操作策略的视触融合 |
-| 触觉基准 | [ManiSkill-ViTac2025](https://github.com/chuanyune/ManiSkill-ViTac2025) | 视觉-触觉灵巧操作基准环境 |
+**RGB 手部基础模型（事实标准）**
+
+| 模型 | 机构 | 年份 | 特点 | 链接 |
+| --- | --- | --- | --- | --- |
+| HaMeR | Meta (FAIR) | CVPR 2024 | 全 Transformer（ViT-H + MANO 解码器），in-the-wild 鲁棒标杆，EgoExo4D Hand Pose Challenge 冠军，开源 MIT | [arXiv:2312.05251](https://huggingface.co/papers/2312.05251) · [GitHub](https://github.com/geopavlakos/hamer) |
+| WiLoR | Imperial College | CVPR 2025 | 端到端"定位+重建"，比 HaMeR 轻量、接近实时（Apple Silicon 可实时网格推理） | [arXiv:2409.12259](https://huggingface.co/papers/2409.12259) · [CVPR OA](https://openaccess.thecvf.com/content/CVPR2025/html/Potamias_WiLoR_End-to-end_3D_Hand_Localization_and_Reconstruction_in-the-wild_CVPR_2025_paper.html) |
+| SMPLer-X / SMPLest-X | 上海AI Lab / SJTU | 2024 / 2025 | 全身（含手部）表达性姿态/形状基础模型，Scaling ViT | [SMPLest-X arXiv:2501.09782](https://arxiv.org/abs/2501.09782) · [项目页](http://caizhongang.com/projects/SMPLer-X/) |
+| ReJSHand | — | 2025 | 实时手部姿态+网格重建（refined joint & skeleton features） | [arXiv:2503.05995](https://huggingface.co/papers/2503.05995) |
+| Handy | Imperial College | CVPR 2023 | MANO 之外的高保真手部形状/外观统计模型 | [GitHub](https://github.com/rolpotamias/handy) |
+| HaWoR | — | CVPR 2025 | 第一视角**世界坐标系**手部运动重建（SLAM+手姿态解耦），面向 XR/机器人 | [GitHub](https://github.com/ThunderVVV/HaWoR) |
+| Dyn-HaMR | — | 2025 | 动态相机下的 4D 交互手部运动恢复（HaMeR 后续线） | [GitHub](https://github.com/ZhengdiYu/Dyn-HaMR) |
+| GeoHand / DreamHand | — | 2026 | 几何先验（MoGe 深度 token）单目重建 / 视频扩散模型遮挡鲁棒手部恢复 | [GeoHand](https://ar5iv.labs.arxiv.org/html/2605.17354) · [DreamHand](https://arxiv.org/html/2608.20308v1) |
+| MediaPipe Hands | Google | 工业基线 | 实时 2D/3D 关键点（Apple Silicon ~40fps），遥操作最常用组件 | [实测参考](https://github.com/flyingGH/hand-tracking-experiments) |
+
+**手-物交互重建：进入 3DGS 时代**
+
+| 方法 | 年份/会议 | 特点 | 链接 |
+| --- | --- | --- | --- |
+| HOLD | CVPR 2024 | 视频中类别无关的手+物 3D 重建（MPI） | [项目页](https://is.mpg.de/ps/en/projects/hold-inferring-3d-hand-and-object-shape-from-video) |
+| HOISDF | CVPR 2024 | 全局 SDF 约束的 3D 手-物姿态估计 | [论文页](https://mlanthology.org/cvpr/2024/qi2024cvpr-hoisdf/) |
+| BIGS | CVPR 2025 | 3DGS 双手类别无关交互重建 | [CVPR OA](https://openaccess.thecvf.com/content/CVPR2025/papers/On_BIGS_Bimanual_Category-agnostic_Interaction_Reconstruction_from_Monocular_Videos_via_3D_CVPR_2025_paper.pdf) |
+| GHOST / ArGS | CVPR 2026 | 3DGS 快速类别无关 HOI 重建 / 单目铰接操纵阶段性 3DGS | [GHOST](https://www.openaccess.thecvf.com/content/CVPR2026F/html/Aboukhadra_GHOST_Fast_Category-Agnostic_Hand-Object_Interaction_Reconstruction_from_RGB_Videos_Using_CVPRF_2026_paper.html) · [ArGS](https://github.com/ru1ven/ARGS) |
+| EasyHOI | CVPR 2025 | 用大规模基础模型在野外重建手-物交互 | [CVPR OA](https://openaccess.thecvf.com/content/CVPR2025/html/Liu_EasyHOI_Unleashing_the_Power_of_Large_Models_for_Reconstructing_Hand-Object_CVPR_2025_paper.html) |
+| CHOIR | 2026 | 接触感知的 4D 手-物交互重建 | [arXiv:2605.20992](https://ar5iv.labs.arxiv.org/html/2605.20992) |
+| UniHOPE | 2025 | 统一"仅手部"与"手-物"姿态估计 | [arXiv:2503.13303](https://ar5iv.labs.arxiv.org/html/2503.13303) |
+| EgoGrasp / HOPformer | 2026 | 第一视角世界坐标系手-物交互估计 / 野外第一视角 3D 手-物姿态 | [EgoGrasp](https://ar5iv.labs.arxiv.org/html/2601.01050) · [HOPformer](https://github.com/Sid2697/HOPformer) |
+| HOT3D（数据集） | Meta | CVPR 2025 | Project Aria 第一视角手+物追踪数据集（公开） | [项目页](https://facebookresearch.github.io/hot3d/) · [arXiv:2411.19167](https://huggingface.co/buckets/huggingchat/papers-content/tree/2411/2411.19167.md) |
+| H2O / AnyHand（数据集） | — | 2021 / 2026 | 第一视角双手-物 RGBD 数据集（6D 位姿）/ 大规模合成 RGB-D 手部数据集 | [H2O](https://www.openaccess.thecvf.com/content/ICCV2021/html/Kwon_H2O_Two_Hands_Manipulating_Objects_for_First_Person_Interaction_Recognition_ICCV_2021_paper.html) · [AnyHand](https://browse-export.arxiv.org/pdf/2603.25726) |
+| HandOccNet | CVPR 2022 | 遮挡鲁棒 3D 手部网格估计经典基线 | [GitHub](https://github.com/henrycjh/HandOccNet) |
+
+**多模态融合与触觉（遮挡下的"救命稻草"）**
+
+| 方法 | 模态 | 年份 | 特点 | 链接 |
+| --- | --- | --- | --- | --- |
+| ViTaSCOPE | 视觉+触觉 | RSS 2025 | 视触隐式表示，in-hand 位姿+外接触点联合估计 | [arXiv:2506.12239](https://ui.adsabs.harvard.edu/abs/2025arXiv250612239L/abstract) |
+| In-Hand Object Pose via Visual-Tactile Fusion | 视觉+触觉 | 2025 | 视触融合 in-hand 6D 位姿（DFKI） | [arXiv:2506.10787](https://arxiv.org/pdf/2506.10787) |
+| AVI-HT / VIHand | 视觉+IMU | 2026 / ACM MM 2025 | 自适应视觉-IMU 融合 3D 手部追踪 | [AVI-HT](https://arxiv.org/pdf/2605.21714.pdf) · [VIHand](https://dl.acm.org/doi/10.1145/3746027.3758215) |
+| GelSight Mini / DIGIT 360 | 触觉硬件 | 2024- | 商用"人分辨率"视触传感器（GelSight）/ Meta 模块化视触传感器 | [GelSight](https://www.gelsight.com/products/gelsightmini/) · [DIGIT 360](https://github.com/facebookresearch/digit360) |
+| GelSLAM | 触觉 | 2025 | 触觉 SLAM：长时程 6DoF 物体位姿追踪 | [arXiv:2508.15990](https://ar5iv.labs.arxiv.org/html/2508.15990) |
+| Reactive Diffusion Policy | 视觉+触觉策略 | 2025 | 慢-快视触策略（接触丰富操作） | [arXiv:2503.02881](https://arxiv.org/html/2503.02881) |
+| 视触融合追踪 | 视觉+触觉 | 2025 | Science Robotics 封面：视触结合使追踪精度提升 94% | [报道](https://www.leaderobot.com/news/5106) |
+
+**机器人侧应用事实标准（"单目 RGB 手部估计 + 重定向"闭环）**
+
+- **AnyTeleop**：MediaPipe 手指关键点 + RGB 手腕姿态 + [dex-retargeting](https://github.com/dexsuite/dex-retargeting) 优化重定向（[arXiv:2307.04577](https://arxiv.org/abs/2307.04577)）
+- **DexCap**：胸前 RGB-D（L515→D435）场景点云 + 手背 T265 SLAM + 电磁动捕手套（[GitHub](https://github.com/j96w/DexCap)）
+- **EgoDex**：EPIC-KITCHENS 第一视角视频 → 人手姿态 → 灵巧手重定向 → 教师策略蒸馏（[GitHub](https://github.com/apple/ml-egodex)）
+- **UniDex**（CVPR 2026）：第一视角人类视频驱动的通用灵巧手控制基础套件（[GitHub](https://github.com/unidex-ai/UniDex)）
+- **EgoInfinity**：web-scale 4D 手-物数据引擎（[S2](https://www.semanticscholar.org/paper/EgoInfinity%3A-A-Web-Scale-4D-Hand-Object-Interaction-Wang-Ren/a65ce32514cdfede235cca1605b3b6fae98303c6)）
+- **HaMeR 系视觉遥操作**：[hand-hamer-vision-teleop](https://github.com/craft-hand/hand-hamer-vision-teleop)；[Parse-Augment-Distill](https://ar5iv.labs.arxiv.org/html/2509.20286) 明确用 HaMeR 提取手部姿态做策略蒸馏
+- **XR 遥操作**：[OpenTeach](https://mlanthology.org/corl/2024/iyer2024corl-open/)（CoRL 2024）、Unitree [televuer](https://github.com/unitreerobotics/televuer)
+
+> ⚠️ 调研说明：网传独立手部模型 "ManoPose" 经 56 次搜索未能验证（同名 ManiPose 为人体姿态模型），请勿引用。
 
 ### 2. 控制：VLA 进入"灵巧手原生"时代
 

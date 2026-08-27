@@ -50,6 +50,11 @@
 | UniDex | 176 | CVPR 2026 通用灵巧手控制基础套件 | [unidex-ai/UniDex](https://github.com/unidex-ai/UniDex) |
 | dex-hand-teleop | 159 | 单手手部动捕到多手模型的遥操作重定向 | [yzqin/dex-hand-teleop](https://github.com/yzqin/dex-hand-teleop) |
 | dex-retargeting | — | 人手运动到机器人手的运动重定向 | [dexsuite/dex-retargeting](https://github.com/dexsuite/dex-retargeting) |
+| hamer | — | HaMeR 手部网格恢复基础模型（Meta, CVPR 2024, MIT） | [geopavlakos/hamer](https://github.com/geopavlakos/hamer) |
+| wilor | — | WiLoR 端到端 3D 手部定位与重建（CVPR 2025） | [rolpotamias/wilor](https://github.com/rolpotamias/wilor) |
+| digit360 | — | Meta 高精度模块化视触传感器（开源） | [facebookresearch/digit360](https://github.com/facebookresearch/digit360) |
+| OpenHomie | — | 同构外骨骼座舱 + 人形全身遥操作（上海AI实验室） | [InternRobotics/OpenHomie](https://github.com/InternRobotics/OpenHomie) |
+| DOGlove | — | 低成本开源力反馈动捕手套（清华, RSS 2025），代码见项目页 | [项目页](https://do-glove.github.io/) |
 
 ## 四、中文社区开源项目
 
