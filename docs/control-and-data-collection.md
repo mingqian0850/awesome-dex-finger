@@ -108,7 +108,48 @@
 
 ---
 
-## 五、方案选择建议
+## 五、2025-2026 前沿方法（SOTA 现状）
+
+> 本节回答"现在最前沿的方法是什么"。内容基于 2026-08 调研，链接均已核实。
+
+### 1. 手部感知：从"姿态估计"到"基础模型 + 多模态"
+
+| 方向 | 前沿方法 | 说明 |
+| --- | --- | --- |
+| RGB 手部基础模型 | [HaMeR](https://geopavlakos.github.io/hamer/)（Meta, CVPR 2024）· [WiLoR](https://arxiv.org/abs/2409.12259)（CVPR 2025） | 大规模预训练的手部网格重建/定位基础模型，野外鲁棒，取代传统深度方案成为手姿态估计默认选择 |
+| 4D 手部运动 | [Dyn-HaMR](https://github.com/ZhengdiYu/Dyn-HaMR) | 动态相机下的 4D 交互手部运动恢复 |
+| RGB-D 重建 | HandRT | 单目 RGB-D 手形+外观重建与姿态跟踪 |
+| 视触语言模型 | [Octopi-1.5](https://arxiv.org/abs/2507.09985)（RSS 2025） | 视觉-触觉-语言模型：触觉成为"模态"进入基础模型 |
+| 视觉-触觉融合 | [In-Hand Object Pose Estimation via Visual-Tactile Fusion](https://ui.adsabs.harvard.edu/abs/2025arXiv250610787N/abstract)（DFKI 2025）· [Tactile-Conditioned Diffusion Policy](https://arxiv.org/abs/2510.13324) | 遮挡下手-物位姿与操作策略的视触融合 |
+| 触觉基准 | [ManiSkill-ViTac2025](https://github.com/chuanyune/ManiSkill-ViTac2025) | 视觉-触觉灵巧操作基准环境 |
+
+### 2. 控制：VLA 进入"灵巧手原生"时代
+
+| 模型 | 机构 | 年份 | 说明 |
+| --- | --- | --- | --- |
+| [π0.5](https://arxiv.org/abs/2504.16054) | Physical Intelligence | 2025 | π0 升级版，开放世界泛化，开源实现 [openpi](https://github.com/ROBOTIS-GIT/openpi) |
+| GR00T N1.5 | NVIDIA | 2025-2026 | N1 升级：Eagle 2.5 VLM + DiT flow matching 双系统 |
+| [Helix](https://www.figure.ai/news/helix-02-bedroom-tidy) | Figure AI | 2025 | 快慢脑双系统 VLA，已进入 Helix 02 迭代 |
+| [UniHM](https://mlanthology.org/iclr/2026/zhang2026iclr-unihm/) | — | ICLR 2026 | 统一灵巧手操作的 VLM 框架 |
+| [RLDX-1](https://www.rlwrld.ai/en/rldx-1) | RLWRLD（韩国） | 2026 | "灵巧优先"（Dexterity-First）机器手基础模型，GTC Taipei 2026 发布 |
+
+### 3. 数据采集：数据飞轮 + 合成数据 + 视频学习并行
+
+- **数据飞轮**：遥操作集群采集（智元 AgiBot World 百万级、Figure/1X 数据工厂）+ 模型反哺（用策略自动采集难例）
+- **合成数据**：[NVIDIA Isaac GR00T 合成管线](https://developer.nvidia.com/blog/building-a-synthetic-motion-generation-pipeline-for-humanoid-robot-learning/)（LLM/程序化生成动作 + 物理仿真验证）成为人形数据标配
+- **视频学习**：EgoDex 式第一视角视频持续扩展；外骨骼采集（MILE 等）提供运动学对齐的传感器化演示
+- **触觉数据**：视触融合采集兴起（Octopi 类模型的数据需求）
+
+### 4. 前沿共识（2025-2026）
+
+1. **手部感知默认栈 = RGB 基础模型（HaMeR/WiLoR）+ 腕部深度点云 + 指尖触觉**，单一传感器不再够用
+2. **控制默认栈 = VLA 基础模型微调**（π0.5/GR00T N1.5/Helix），RL 退居"技能级"补充
+3. **数据默认栈 = 仿真合成（GR00T 管线）+ 遥操作集群 + 视频学习三条腿走路**
+4. **触觉成为下一个"模态"**：Octopi-1.5 等视触语言模型预示"触觉 LLM"方向
+
+---
+
+## 六、方案选择建议
 
 | 你的场景 | 推荐组合 |
 | --- | --- |
