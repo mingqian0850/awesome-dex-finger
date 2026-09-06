@@ -20,6 +20,7 @@
 | [docs/control-and-data-collection.md](docs/control-and-data-collection.md) | 控制方法与数据采集方法（遥操作 / 视频学习 / 仿真合成） |
 | [docs/datasets.md](docs/datasets.md) | 数据集与基准平台 |
 | [docs/open-source.md](docs/open-source.md) | 开源项目清单（硬件 / 仿真 / 软件） |
+| [docs/latest-updates-2026h2.md](docs/latest-updates-2026h2.md) | 2026 下半年动态跟踪（硬件新品 / 新论文 / 行业事件） |
 | [awesome-lists.md](awesome-lists.md) | 相关 Awesome 列表导航 |
 
 ## ✨ 快速一览（截至 2025 年 SOTA 概览）
