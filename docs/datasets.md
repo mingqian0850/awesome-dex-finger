@@ -26,6 +26,10 @@
 | DROID | Stanford 等 | 2024 (RSS) | 76k 条真实演示轨迹、564 个场景的野外操作数据集 | [arXiv:2403.12945](https://arxiv.org/abs/2403.12945) |
 | EgoDex | Apple | 2025 | 第一视角日常视频手物交互数据（MANO 轨迹），用于真实灵巧手训练 | [arXiv:2505.11709](https://arxiv.org/abs/2505.11709) · [GitHub](https://github.com/apple/ml-egodex) |
 | DexCanvas | DEXROBOT | 2025 | 连接人类演示与机器人学习的灵巧操作数据集 | [arXiv:2510.15786](https://arxiv.org/abs/2510.15786) |
+| HandEdit | 因时 + 上海交大 + 复旦 | 2026-09 | 全球首个"第一视角人手→机器人手"图像编辑基准，覆盖 13 种灵巧手、约 2 亿样本 | [OFweek 报道](https://robot.ofweek.com/2026-09/ART-898890-8120-30701741.html) |
+| SoftVTBench | — | 2026-08 | 变形感知视触觉数据集与 benchmark（柔性物体操作） | [arXiv:2608.18701](https://arxiv.org/abs/2608.18701) |
+| DexWM 数据集 | Meta | 2026 开源 | 世界模型从人类视频学灵巧手-物交互（配套代码） | [HF 数据集](https://huggingface.co/datasets/facebook/dexwm) · [GitHub](https://github.com/facebookresearch/dexwm) |
+| 1M-HUGS（NYU HUG） | NYU | 2026 | 百万级人手抓取数据，支持零样本迁移 | [项目页](https://hugs-dex.github.io/) |
 
 ## 仿真与 RL 基准
 

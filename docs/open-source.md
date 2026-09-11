@@ -55,6 +55,8 @@
 | dex-hand-teleop | 159 | 单手手部动捕到多手模型的遥操作重定向 | [yzqin/dex-hand-teleop](https://github.com/yzqin/dex-hand-teleop) |
 | wilor | 663 | WiLoR 端到端 3D 手部定位与重建（CVPR 2025） | [rolpotamias/wilor](https://github.com/rolpotamias/wilor) |
 | Bidex_Manus_Teleop | 105 | LEAP Hand + Manus 数据手套的双手遥操作 | [leap-hand/Bidex_Manus_Teleop](https://github.com/leap-hand/Bidex_Manus_Teleop) |
+| DexWM | — | Meta：世界模型从人类视频学灵巧手-物交互，代码 + 数据集开源 | [facebookresearch/dexwm](https://github.com/facebookresearch/dexwm) · [HF 数据集](https://huggingface.co/datasets/facebook/dexwm) |
+| UnifoLM-WLA-1.0 | — | 宇树人形基础模型（2026-09 全面开源）：单模型 64 种任务、2500 小时真机数据 | [宇树开源](https://www.zhidx.com/p/592980.html) |
 | DOGlove | — | 低成本开源力反馈动捕手套（清华, RSS 2025），代码见项目页 | [项目页](https://do-glove.github.io/) |
 
 ## 四、中文社区开源项目
