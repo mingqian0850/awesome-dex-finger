@@ -1,12 +1,77 @@
 # 🆕 2026 下半年动态跟踪（2026-06 至今）
 
 > 灵巧手领域最新动态：硬件新品、前沿论文、开源生态、行业事件。
-> **最新一轮：2026-09 月报**（50 次 web_search，最新条目 2026-09-11）｜历史：2026-06~08 双月报（29 次搜索）。
-> 事件锚点：WAIC 2026（7 月·上海）、RSS 2026（7 月·悉尼）、WRC 2026（8 月·北京）、IROS 2026（9 月底·匹兹堡）、CoRL 2026（11 月·奥斯汀）。
+> **最新一轮：2026-09 中下旬增量（09-12 ~ 09-21）**｜历史：2026-09 月报（09-11 前）、2026-06~08 双月报。
+> 事件锚点：WAIC 2026（7 月·上海）、RSS 2026（7 月·悉尼）、WRC 2026（8 月·北京）、**IROS 2026（9/27-10/1·匹兹堡）**、CoRL 2026（11 月·奥斯汀）。
 
 ---
 
-# 📅 2026 年 9 月月报
+# 📅 2026-09 中下旬增量（09-12 ~ 09-21）
+
+## A. 新论文（arXiv 2609.12xxx 及以后）
+
+| 名称 | 机构 | 链接 | 一句话 |
+| --- | --- | --- | --- |
+| **Fingers as Legs** | **ETH Zurich** | [arXiv:2609.17172](https://papers.cool/arxiv/2609.17172) · [TechTimes](https://www.techtimes.com/articles/327706/20260918/eth-zurich-robotic-hand-walks-steers-presses-keys-its-own-fingers.htm) | 用商购 WUJI 手**以手指为腿**自我支撑移动并按键；25 次硬件试验 21 次成功站立（84%） |
+| **DexTouch-WM** | 见来源 | [arXiv:2609.20649](https://ar5iv.labs.arxiv.org/html/2609.20649v1) · [中文解读](https://www.zhidx.com/p/595544.html) | 从**人类触摸**学动作条件触觉世界模型（"懂接触、会预判"）——本窗口触觉线最受关注 |
+| TacSushi | 见来源 | [arXiv:2609.19613](https://papers.cool/arxiv/2609.19613) | 触觉落地的 world-action model，面向寿司这类高精度柔性食物操作 |
+| STAR | 见来源 | [arXiv:2609.12549](https://ar5iv.labs.arxiv.org/html/2609.12549v2) | 在 VTLA 模型里做**稀疏触觉表征学习**（把触觉当稀缺模态压缩对齐） |
+| Towards High-DoF Dexterous Manipulation through VLA Post-Training | 见来源 | [arXiv:2609.19666](https://ar5iv.labs.arxiv.org/html/2609.19666v1) | 高自由度灵巧操作的 VLA **后训练**路线 |
+| DEXTERA | 见来源 | [arXiv:2609.21045](https://ar5iv.labs.arxiv.org/abs/2609.21045) | 单张图像 → 可部署灵巧操作策略（Real-to-Sim-to-Real 闭环） |
+| AnyViewDex | 见来源 | [arXiv:2609.20107](https://ar5iv.labs.arxiv.org/html/2609.20107v1) · [代码](https://github.com/flyingGH/AnyViewDex_maniwhere_Playground) | 仅用 RGB、对相机视角不变的灵巧操作（开源 RL 实现） |
+| ARTMANIP | 见来源 | [arXiv:2609.12498](https://www.alphaxiv.org/pdf/2609.12498) | 类别级铰接物体手内操作，零样本 Sim2Real |
+| OpenDexGrasp | 见来源 | [arXiv:2609.18117](https://ar5iv.labs.arxiv.org/html/2609.18117v2) | 开放词汇 + 任务导向灵巧抓取，含 C2A Recipe 训练配方 |
+| ProxiDex | 见来源 | [arXiv:2609.16586](https://papers.cool/arxiv/2609.16586) | 动力学引导的"接近策略"，把灵巧操作拆成接近段与接触段 |
+| Real-World RL with MPC Scaffolding | 见来源 | [arXiv:2609.14878](https://ar5iv.labs.arxiv.org/html/2609.14878v2) | 用 MPC 当"脚手架"约束真机 RL 探索 |
+| Grasping by interconnection | 见来源 | [arXiv:2609.19228](https://ar5iv.labs.arxiv.org/html/2609.19228v1) | 用粗糙物体模板构造"互锁式"闭合动作换取鲁棒抓取 |
+| **HANDS 2026 挑战赛亚军方案** | HANDS 2026 Workshop | [arXiv:2609.21511](https://arxiv.org/abs/2609.21511v1) | 抓取动作生成赛道亚军：单次轨迹 warp 生成抓取动作——**该赛道已进入竞赛评标阶段** |
+| GALA（SIGGRAPH Asia 2026） | 中国科大 GCL 实验室 | [arXiv:2609.21948](https://ar5iv.labs.arxiv.org/abs/2609.21948) · [实验室页](http://gcl.ustc.edu.cn/post/26-09-15/) | 跨具身 VLA 预训练的几何感知潜在动作建模 |
+
+## B. 硬件 / 开源 / 融资（09-12 ~ 09-21）
+
+| 名称 | 类型 | 日期 | 链接 | 一句话 |
+| --- | --- | --- | --- | --- |
+| **Tesla Optimus 量产审厂** | 量产 | 09-19/20 | [IT之家](https://m.ithome.com/html/1004343.htm) | 供应链端启动审厂、团队落地宁波，5 万台下线计划曝光（手部为核心环节） |
+| **宇树 UnifoLM-WLA-1.0 开源** | 开源模型 | 09-20 | [来源](https://life.hsw.cn/system/2026/0920/195065.shtml) | 单模型统筹 64 项真机任务，直接影响灵巧操作数据接口形态 |
+| **Sharpa 世界联觉模型开源** | 开源模型 | 09-17 (CoRL 2026) | [机器之心](https://www.jiqizhixin.com/articles/2026-09-17-10) | 真实扰动下鲁棒手内操作；与 **NVIDIA Tacmap 触觉仿真**打通，宣称零样本 sim-to-real 手内旋转 |
+| 千觉机器人 整手触觉方案 2.0 | 触觉硬件 | 09-12 | [新浪财经](https://finance.sina.com.cn/roll/2026-09-12/doc-inirputk6710942.shtml) | 从局部感知到"整手交互"，现场演示托举/抓握/旋拧 |
+| **帕西尼 完成数亿元 B++ 轮（累计超 40 亿元）** | 融资 | 09-16/21 | [腾讯新闻](https://news.qq.com/rain/a/20260916A0DKZU00) · [福布斯中国](https://www.forbeschina.com/investment/%e6%8a%95%e8%b5%84/72159) | 触觉感知层最大单笔，启动 IPO、估值过百亿 |
+| 超维动力 超 5 亿元天使+轮 | 融资 | 09-11 | [央广网](https://tech.cnr.cn/techph/20260911/t20260911_527810845.shtml) | 淡马锡旗下机构加注，高拟人机器人 |
+| 灵巧智能 DexRobot × 京东 | 合作 | 09-11/12 | [新民周刊](https://www.xinminweekly.com.cn/shenghuo/2026/09/12/51851.html) | 上海人工智能研究院孵化企业对接京东场景 |
+| 兆威机电 约 8 亿元产业园投资 | 产能 | 09-11/12 | [盖世汽车](https://auto.gasgoo.com/news/202609/11I70471709C601.shtml) | 向核心模组与数据两端延伸；"要穿越泡沫，不能只看自由度" |
+| Agility Robotics Digit 5 | 产品 | 09-16 | [GeekWire](https://www.geekwire.com/2026/agilitys-new-digit-5-robot-lifts-50-pounds-works-20-hours-a-day-and-operates-alongside-people/) | 无围栏人机协作、负载 22.7 kg、日工作 20+ 小时 |
+| 智元 全尺寸人形规模化商用落地 | 量产 | 09-17 | [中国证券网](https://www.cnstock.com/commonDetail/791409) | 4S 店/酒店/便利店实景商用案例 |
+| **禾川科技：灵巧手仍处手工装配小批量阶段** | 产业现实校验 | 09-18 | [凤凰财经](https://finance.ifeng.com/c/8wVycI1F6Wf) | 一线零部件厂对"灵巧手是否真量产"的降温口径 |
+| 灵初智能 × 北大 开源 EgoSteer | 开源 | 见来源 | [灵初智能](https://www.psibot.ai/) | 双灵巧手通用模型 + 全栈系统开源 |
+
+**行业数据（09 月）**
+- 灵巧手赛道融资近 70 亿（另一口径半年 200 亿热钱、3 大路线）｜2026 出货或超 7 万只/3 万台，29 家供应商盘点——"**电子皮肤与传感器率先迎来质的变化，价值向感知层转移**"
+
+## C. 会议与标准（09-12 ~ 09-21）
+
+- **IROS 2026**：9/27–10/1 匹兹堡（[官方](https://2026.ieee-iros.org/)），已进入最后倒计时
+- **第五届全球数字贸易博览会**：**9/23 杭州**（特斯拉赛博无人车、宇树变形机甲为"镇馆之宝"）
+- **2026 高工灵巧操作未来技术大会**：约 9/23 北京中关村——国内唯一专注"灵巧操作"的行业大会
+- 2026 科技创变者大会（9/19-20 北京）、CIIF 上海工博会（9 月）、服贸会（9/11-13）、浦江创新论坛（9/12）
+- **标准**：灵巧手国家标准预计年底公示；另有《具身智能算力端边协同计算技术要求》等 4 项团体标准获批
+
+## D. IROS 2026 前瞻（9/27-10/1 匹兹堡）
+
+- **HANDS Workshop 2026**（[官网](https://hands-workshop.org/workshop2026.html)）：Dexterous Grasp Motion Track 结果论文已挂出（arXiv:2609.21511），会上将公布完整榜单
+- **双手操作**：IEEE IROS 2026 Workshop on Bimanual Manipulation（[OpenReview](https://openreview.net/group?id=IEEE.org%2FIROS%2F2026%2FWorkshop%2FBimanual_Manipulation)）——双手协同是今年最密集议题
+- **工作坊骨架**：ICRA 2026《Dexterity with Multifingered Hands: Hardware, Sensing, and Skills》与 ECCV 2026 DexHAND 确立"硬件+感知+技能"三分法
+- **社区索引**：[IROS 2026 Cross-Embodiment WM](https://github.com/Heungwoo/research/wiki/IROS-2026-Cross-Embodiment-WM)、[VLA Manipulation Survey](https://github.com/Heungwoo/research/wiki/IROS-2026-VLA-Manipulation-Survey)
+- **判断**：触觉世界模型 / 手内操作的主战场今年实际在 **CoRL 2026**（Sharpa 9/17 开源即挂 CoRL 名号），IROS 更偏硬件与技能实现
+
+## E. 这 10 天最值得注意的 3 件事
+
+1. **触觉从"传感器"变成"世界模型"**：DexTouch-WM + TacSushi + STAR 三篇集中出现（9/13-9/20），产业侧同日 Sharpa 开源"世界联觉模型"打通 NVIDIA Tacmap 触觉仿真、千觉发布整手触觉 2.0。**共识正在形成：瓶颈不是自由度，而是接触状态的预判与表征。**
+2. **"手"与"脑"同时在 9 月落地**：Optimus 量产审厂（9/19）+ 宇树开源 UnifoLM-WLA-1.0（9/20）；同时禾川科技 9/18 明确"仍处手工装配小批量"作为降温对照
+3. **灵巧手的"评测"与"用法"双双被重新定义**：ETH Zurich 以手指为腿行走（非常规本体使用）+ HANDS 2026 挑战赛结果论文（竞赛化基准）
+
+---
+
+# 📅 2026 年 9 月月报（09-01 ~ 09-11）
 
 ## A. 新论文 / 模型（arXiv 2609.* 为主）
 
