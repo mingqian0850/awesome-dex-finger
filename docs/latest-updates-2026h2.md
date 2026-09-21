@@ -13,18 +13,18 @@
 | 名称 | 机构 | 链接 | 一句话 |
 | --- | --- | --- | --- |
 | **Fingers as Legs** | **ETH Zurich** | [arXiv:2609.17172](https://papers.cool/arxiv/2609.17172) · [TechTimes](https://www.techtimes.com/articles/327706/20260918/eth-zurich-robotic-hand-walks-steers-presses-keys-its-own-fingers.htm) | 用商购 WUJI 手**以手指为腿**自我支撑移动并按键；25 次硬件试验 21 次成功站立（84%） |
-| **DexTouch-WM** | 见来源 | [arXiv:2609.20649](https://ar5iv.labs.arxiv.org/html/2609.20649v1) · [中文解读](https://www.zhidx.com/p/595544.html) | 从**人类触摸**学动作条件触觉世界模型（"懂接触、会预判"）——本窗口触觉线最受关注 |
-| TacSushi | 见来源 | [arXiv:2609.19613](https://papers.cool/arxiv/2609.19613) | 触觉落地的 world-action model，面向寿司这类高精度柔性食物操作 |
-| STAR | 见来源 | [arXiv:2609.12549](https://ar5iv.labs.arxiv.org/html/2609.12549v2) | 在 VTLA 模型里做**稀疏触觉表征学习**（把触觉当稀缺模态压缩对齐） |
-| Towards High-DoF Dexterous Manipulation through VLA Post-Training | 见来源 | [arXiv:2609.19666](https://ar5iv.labs.arxiv.org/html/2609.19666v1) | 高自由度灵巧操作的 VLA **后训练**路线 |
-| DEXTERA | 见来源 | [arXiv:2609.21045](https://ar5iv.labs.arxiv.org/abs/2609.21045) | 单张图像 → 可部署灵巧操作策略（Real-to-Sim-to-Real 闭环） |
-| AnyViewDex | 见来源 | [arXiv:2609.20107](https://ar5iv.labs.arxiv.org/html/2609.20107v1) · [代码](https://github.com/flyingGH/AnyViewDex_maniwhere_Playground) | 仅用 RGB、对相机视角不变的灵巧操作（开源 RL 实现） |
-| ARTMANIP | 见来源 | [arXiv:2609.12498](https://www.alphaxiv.org/pdf/2609.12498) | 类别级铰接物体手内操作，零样本 Sim2Real |
-| OpenDexGrasp | 见来源 | [arXiv:2609.18117](https://ar5iv.labs.arxiv.org/html/2609.18117v2) | 开放词汇 + 任务导向灵巧抓取，含 C2A Recipe 训练配方 |
-| ProxiDex | 见来源 | [arXiv:2609.16586](https://papers.cool/arxiv/2609.16586) | 动力学引导的"接近策略"，把灵巧操作拆成接近段与接触段 |
-| Real-World RL with MPC Scaffolding | 见来源 | [arXiv:2609.14878](https://ar5iv.labs.arxiv.org/html/2609.14878v2) | 用 MPC 当"脚手架"约束真机 RL 探索 |
-| Grasping by interconnection | 见来源 | [arXiv:2609.19228](https://ar5iv.labs.arxiv.org/html/2609.19228v1) | 用粗糙物体模板构造"互锁式"闭合动作换取鲁棒抓取 |
-| **HANDS 2026 挑战赛亚军方案** | HANDS 2026 Workshop | [arXiv:2609.21511](https://arxiv.org/abs/2609.21511v1) | 抓取动作生成赛道亚军：单次轨迹 warp 生成抓取动作——**该赛道已进入竞赛评标阶段** |
+| **DexTouch-WM** | 港科大（广州）+ Xspark AI + 北大 + 清华 + 港大｜**IROS 2026 Workshop** | [arXiv:2609.20649](https://ar5iv.labs.arxiv.org/html/2609.20649v1) · [中文解读](https://www.zhidx.com/p/595544.html) | 从**人类触摸**学动作条件触觉世界模型（"懂接触、会预判"）——本窗口触觉线最受关注 |
+| TacSushi | 南加州大学（USC）+ 三菱电机研究实验室（MERL） | [arXiv:2609.19613](https://papers.cool/arxiv/2609.19613) | 触觉落地的 world-action model，面向寿司这类高精度柔性食物操作 |
+| STAR | 未能核验（原论文未见机构署名） | [arXiv:2609.12549](https://ar5iv.labs.arxiv.org/html/2609.12549v2) | 在 VTLA 模型里做**稀疏触觉表征学习**（把触觉当稀缺模态压缩对齐） |
+| Towards High-DoF Dexterous Manipulation through VLA Post-Training | Wuji Technology + 上海科技大学 | [arXiv:2609.19666](https://ar5iv.labs.arxiv.org/html/2609.19666v1) | 高自由度灵巧操作的 VLA **后训练**路线 |
+| DEXTERA | 德州大学奥斯汀 + 佛罗里达大学 + BrainCo | [arXiv:2609.21045](https://ar5iv.labs.arxiv.org/abs/2609.21045) | 单张图像 → 可部署灵巧操作策略（Real-to-Sim-to-Real 闭环） |
+| AnyViewDex | IIIT-Hyderabad + VJTI Mumbai + IISER Bhopal | [arXiv:2609.20107](https://ar5iv.labs.arxiv.org/html/2609.20107v1) · [代码](https://github.com/flyingGH/AnyViewDex_maniwhere_Playground) | 仅用 RGB、对相机视角不变的灵巧操作（开源 RL 实现） |
+| ARTMANIP | 未能核验 | [arXiv:2609.12498](https://www.alphaxiv.org/pdf/2609.12498) | 类别级铰接物体手内操作，零样本 Sim2Real |
+| OpenDexGrasp | 北大（CFCS）+ BIGAI + PrimeBot｜**CoRL 2026 录用** | [arXiv:2609.18117](https://ar5iv.labs.arxiv.org/html/2609.18117v2) | 开放词汇 + 任务导向灵巧抓取，含 C2A Recipe 训练配方 |
+| ProxiDex | 中科院自动化所 + 国科大 + 新疆大学｜**CoRL 2026 录用** | [arXiv:2609.16586](https://papers.cool/arxiv/2609.16586) | 动力学引导的"接近策略"，把灵巧操作拆成接近段与接触段 |
+| Real-World RL with MPC Scaffolding | Honda Research Institute USA | [arXiv:2609.14878](https://ar5iv.labs.arxiv.org/html/2609.14878v2) | 用 MPC 当"脚手架"约束真机 RL 探索 |
+| Grasping by interconnection | 未能核验 | [arXiv:2609.19228](https://ar5iv.labs.arxiv.org/html/2609.19228v1) | 用粗糙物体模板构造"互锁式"闭合动作换取鲁棒抓取 |
+| **HANDS 2026 挑战赛亚军方案** | UNIST（韩国）+ University of Aberdeen + Fogsphere | [arXiv:2609.21511](https://arxiv.org/abs/2609.21511v1) | 抓取动作生成赛道亚军：单次轨迹 warp 生成抓取动作——**该赛道已进入竞赛评标阶段** |
 | GALA（SIGGRAPH Asia 2026） | 中国科大 GCL 实验室 | [arXiv:2609.21948](https://ar5iv.labs.arxiv.org/abs/2609.21948) · [实验室页](http://gcl.ustc.edu.cn/post/26-09-15/) | 跨具身 VLA 预训练的几何感知潜在动作建模 |
 
 ## B. 硬件 / 开源 / 融资（09-12 ~ 09-21）
@@ -63,6 +63,32 @@
 - **社区索引**：[IROS 2026 Cross-Embodiment WM](https://github.com/Heungwoo/research/wiki/IROS-2026-Cross-Embodiment-WM)、[VLA Manipulation Survey](https://github.com/Heungwoo/research/wiki/IROS-2026-VLA-Manipulation-Survey)
 - **判断**：触觉世界模型 / 手内操作的主战场今年实际在 **CoRL 2026**（Sharpa 9/17 开源即挂 CoRL 名号），IROS 更偏硬件与技能实现
 
+## F. 核验汇总与 CoRL 2026 录用清单
+
+> 本节内容经 **arXiv 官方 API + 官方 HTML 全文作者块**核验（非搜索摘要推测），完整核验表见附录 [verification-2026-09.md](verification-2026-09.md)。
+
+**会议录用确认清单**
+- **CoRL 2026**：WM-Craftnet（Sharpa）、Intervention-Aware World Models（港科大广州+IIT+浙大）、OpenDexGrasp（北大+BIGAI+PrimeBot）、ProxiDex（中科院自动化所）、Touch2Trace / SlipSense（Analog Devices）、Visible Touch（UCLA）
+- **IROS 2026**：ViHaTeleop（日本东北大学）；DexTouch-WM（IROS 2026 Workshop RoBoWoMo, Lightning Talk）
+- **其他**：CosmoH2G → **SIGGRAPH Asia 2026**（非 IROS/CoRL）；多指手灵巧度评测综述 → Annual Review of CRAS Vol.10 (2027)
+
+**两处重要纠正**
+1. ⚠️ 《A Tendon-Driven Five-Fingered Hand with Distributed Tactile Perception》的录用会议**既非 IROS 2026 也非 CoRL 2026**，而是 **ICoSR 2026**（东南大学机械工程学院）
+2. ⚠️ 多篇论文标题在早期清单中被截断，其中 CoRL 2026 论文完整首句为 **"How to Learn from What a Human Would Avoid?"**（Intervention-Aware World Models）
+
+**核验结论**：20 篇抽查论文 arXiv 号**全部正确**；8 篇存在标题截断/前缀差异（已逐条注明）。**"未标注录用" ≠ "未被录用"**。
+
+**09-12 ~ 09-18 完整论文批次**（从 525 篇 cs.RO 中筛出 112 篇，精筛 29 篇灵巧手/触觉核心工作，含机构与录用状态）：见附录 [verification-2026-09.md](verification-2026-09.md)。其中重点：
+- **Skel-WAM**（港中大 + 上海AI实验室）：手骨架条件世界动作模型，人→机器人操作迁移
+- **Bench2Dex**（上交 + 复旦 + 港大 + Inspire Robots + 南洋理工）：**跨多种灵巧手的视触觉双手操作基准**
+- **DITTO**（哥大 + 斯坦福）：透明遥操作灵巧接口；**Gated Residual Body-Hand Coordination**（TUM + Agile Robots）：全身人形遥操作
+- **Weave**（清华 IIIS + 大连理工 + 港中大）：从人-物交互学全身灵巧 loco-manipulation
+- **TacBPM**（Sharpa）：触觉条件行为先验模型；**Touch2Trace / SlipSense**（Analog Devices）：线缆追踪 / 滑动检测（CoRL 2026）
+- **Honda Research Institute USA** 两篇 MPC 路线；**Meta Reality Labs** 腕戴压力阵列估计全手位姿与接触力
+- **UniDex-ViTac / GIFT**：论文未打印机构，未能核验（未作猜测）
+
+---
+
 ## E. 这 10 天最值得注意的 3 件事
 
 1. **触觉从"传感器"变成"世界模型"**：DexTouch-WM + TacSushi + STAR 三篇集中出现（9/13-9/20），产业侧同日 Sharpa 开源"世界联觉模型"打通 NVIDIA Tacmap 触觉仿真、千觉发布整手触觉 2.0。**共识正在形成：瓶颈不是自由度，而是接触状态的预判与表征。**
@@ -77,38 +103,38 @@
 
 | 名称 | 时间 | 链接 | 一句话 |
 | --- | --- | --- | --- |
-| Dex-X | 2026-09 | [arXiv:2609.07747](https://arxiv.org/abs/2609.07747) | 从人类视频 + 仿真交互补齐接触信息，学视觉-触觉灵巧操作（本月最受关注之一） |
-| DeCAL | 2026-09 | [arXiv:2609.09119](https://arxiv.org/abs/2609.09119) | 接触感知潜空间"共同想象"，解决灵巧 VLA 物理不可信问题 |
-| GALATEA | 2026-09 | [arXiv:2609.10050](https://arxiv.org/abs/2609.10050) | 把生成式视频规划落地到仿真，训通用灵巧控制器 |
+| Dex-X | 清华 + 上海期智研究院（合作 Sharpa/同济/人大） | [arXiv:2609.07747](https://arxiv.org/abs/2609.07747) | 从人类视频 + 仿真交互补齐接触信息，学视觉-触觉灵巧操作（本月最受关注之一） |
+| DeCAL | 北大 + 北京智源（BAAI） | [arXiv:2609.09119](https://arxiv.org/abs/2609.09119) | 接触感知潜空间"共同想象"，解决灵巧 VLA 物理不可信问题 |
+| GALATEA | UC Berkeley（合作 Sharpa、港大） | [arXiv:2609.10050](https://arxiv.org/abs/2609.10050) | 把生成式视频规划落地到仿真，训通用灵巧控制器 |
 | **RoboTok** | 2026-09 | [arXiv:2609.03199](https://arxiv.org/abs/2609.03199) · [代码](https://github.com/Rice-RobotPI-Lab/RoboTok-Code) | **NVIDIA + 莱斯大学**：互联网级人类示范检索数据引擎 |
-| WM-Craftnet | 2026-09 | [arXiv:2609.07002](https://arxiv.org/abs/2609.07002) | "世界通感模型"：视觉-触觉跨模态世界模型，提升手内操作泛化 |
-| SEED-UMI | 2026-09 | [arXiv:2609.11753](https://arxiv.org/abs/2609.11753) | 人机共用同一套外骨骼做"一对一"灵巧示范 |
-| 手内转笔/写字快速学习 | 2026-09 | [arXiv:2609.11775](https://arxiv.org/abs/2609.11775) | 实时雅可比估计实现快速学习（非大规模预训练路线） |
-| Intervention-Aware World Models | 2026-09 | [arXiv:2609.06009](https://arxiv.org/abs/2609.06009) | 人类"干预/避免"信号并入世界模型做真机 RL |
-| DUET-DINO | 2026-09 | [arXiv:2609.10506](https://arxiv.org/abs/2609.10506) | 跨视角世界模型用于潜空间规划 |
-| Compact Visuotactile World Models | 2026-09 | [arXiv:2609.09597](https://arxiv.org/abs/2609.09597) | 紧凑视触觉世界模型（预测 + 奖励对齐 + 力约束） |
-| OpenWAM | 2026-09 | [arXiv:2609.07398](https://arxiv.org/abs/2609.07398) | 开放模块化 world-action model 预训练底座 |
-| **Benchmarking Dexterity of Multifingered Robot Hands（综述）** | 2026-09 | [arXiv:2609.05585](https://arxiv.org/abs/2609.05585) | 多指手"灵巧度"评测体系综述（本月少见的 benchmark 类） |
-| Morphology and actuation as inductive biases | 2026-09 | [arXiv:2609.05206](https://arxiv.org/abs/2609.05206) | 把形态+驱动当归纳偏置研究（硬件-算法协同设计） |
-| 模仿学习时间鲁棒性 | 2026-09 | [arXiv:2609.01453](https://huggingface.co/papers/2609.01453) | 跨执行速度的专家-学习者对比（可靠性实证） |
-| CosmoH2G | 2026-09 | [arXiv:2609.07498](https://arxiv.org/abs/2609.07498) | 人手→夹爪迁移数据集与基线 |
+| WM-Craftnet | Sharpa Robotics｜**CoRL 2026 录用** | [arXiv:2609.07002](https://arxiv.org/abs/2609.07002) | "世界通感模型"：视觉-触觉跨模态世界模型，提升手内操作泛化 |
+| SEED-UMI | 北大（通用人工智能国重）+ Delta Intelligence | [arXiv:2609.11753](https://arxiv.org/abs/2609.11753) | 人机共用同一套外骨骼做"一对一"灵巧示范 |
+| 手内转笔/写字快速学习 | ETH Zurich Soft Robotics Lab | [arXiv:2609.11775](https://arxiv.org/abs/2609.11775) | 实时雅可比估计实现快速学习（非大规模预训练路线） |
+| How to Learn from What a Human Would Avoid? Intervention-Aware World Models | 港科大（广州）+ IIT + 浙大｜**CoRL 2026 录用** | [arXiv:2609.06009](https://arxiv.org/abs/2609.06009) | 人类"干预/避免"信号并入世界模型做真机 RL |
+| DUET-DINO | 纽伦堡工大（UTN）+ TUM + KIT | [arXiv:2609.10506](https://arxiv.org/abs/2609.10506) | 跨视角世界模型用于潜空间规划 |
+| Compact Visuotactile World Models | 未能核验 | [arXiv:2609.09597](https://arxiv.org/abs/2609.09597) | 紧凑视触觉世界模型（预测 + 奖励对齐 + 力约束） |
+| OpenWAM | 新加坡国立大学（NUS）+ 清华/北大/港大/浙大/港中大/上交 | [arXiv:2609.07398](https://arxiv.org/abs/2609.07398) | 开放模块化 world-action model 预训练底座 |
+| **Benchmarking Dexterity of Multifingered Robot Hands（综述）** | 美国西北大学（NSF HAND ERC）｜Annual Review of CRAS Vol.10 (2027) | [arXiv:2609.05585](https://arxiv.org/abs/2609.05585) | 多指手"灵巧度"评测体系综述（本月少见的 benchmark 类） |
+| Morphology and actuation as inductive biases | 帕兹马尼·彼得天主教大学（布达佩斯） | [arXiv:2609.05206](https://arxiv.org/abs/2609.05206) | 把形态+驱动当归纳偏置研究（硬件-算法协同设计） |
+| 模仿学习时间鲁棒性 | 马里兰大学（UMD） | [arXiv:2609.01453](https://huggingface.co/papers/2609.01453) | 跨执行速度的专家-学习者对比（可靠性实证） |
+| CosmoH2G | 港中大（深圳）+ GenuX｜**SIGGRAPH Asia 2026** | [arXiv:2609.07498](https://arxiv.org/abs/2609.07498) | 人手→夹爪迁移数据集与基线 |
 | Potential-Guided Particle Steering | 2026-09 | [arXiv:2609.00555](https://arxiv.org/abs/2609.00555) | 面向"否定约束"（不要碰某处）的灵巧抓取合成 |
 | Adaptive VL Grasping | 2026-09 | [arXiv:2609.04096](https://arxiv.org/abs/2609.04096) | 组合式基础模型先验 + 可泛化抓取合成 |
 | One Demonstration, Many Objects | 2026-09 | [arXiv:2609.01938](https://arxiv.org/abs/2609.01938) | 局部接触几何实现一次示范泛化多物体 |
 | MuJoCable | 2026-09 | [arXiv:2609.09612](https://arxiv.org/abs/2609.09612) | 腱驱动机器人降阶表面走线传动建模 |
 | FWBC-VLA | 2026-09 | [arXiv:2609.03889](https://arxiv.org/abs/2609.03889) | 力感知全身补偿 VLA（接触丰富 loco-manipulation） |
 | 形态感知人体动作重定向 | 2026-09 | [arXiv:2609.11357](https://arxiv.org/abs/2609.11357) | 轮式人形 loco-manipulation（与灵巧手 retargeting 同源） |
-| HINT | 2026-09 | [arXiv:2609.02653](https://arxiv.org/abs/2609.02653) | 长时程操作中的人类意图注入 |
+| HINT | 浙大 + 上交 + Noematrix + EndlessAI | [arXiv:2609.02653](https://arxiv.org/abs/2609.02653) | 长时程操作中的人类意图注入 |
 
 **8 月下旬补充（8 月报未覆盖）**
 
 | 名称 | 时间 | 链接 | 一句话 |
 | --- | --- | --- | --- |
-| 腱驱五指手 + 分布式双模态触觉 | 2026-08 | [arXiv:2608.25547](https://arxiv.org/abs/2608.25547) | 8 月底最完整的灵巧手硬件论文（五指分布式触觉） |
-| Motus2 | 2026-08 | [arXiv:2608.30237](https://arxiv.org/abs/2608.30237) | 自演化通用世界模型（专为灵巧操作） |
-| 𝒩₀-Foundation | 2026-08 | [arXiv:2608.29601](https://arxiv.org/abs/2608.29601) | 触觉智能时代的触觉基础模型工作 |
-| SoftVTBench | 2026-08 | [arXiv:2608.18701](https://arxiv.org/abs/2608.18701) | 变形感知视触觉数据集与 benchmark（柔性物体） |
-| ViHaTeleop | 2026-08 | [arXiv:2608.16572](https://arxiv.org/abs/2608.16572) | 低成本轻量视触觉遥操作系统 |
+| 腱驱五指手 + 分布式双模态触觉 | 东南大学机械工程学院｜**ICoSR 2026**（非 IROS/CoRL） | [arXiv:2608.25547](https://arxiv.org/abs/2608.25547) | 8 月底最完整的灵巧手硬件论文（五指分布式触觉） |
+| Motus2 | 生数科技（GensPI）+ 清华 | [arXiv:2608.30237](https://arxiv.org/abs/2608.30237) | 自演化通用世界模型（专为灵巧操作） |
+| 𝒩₀-Foundation | NeoteAI（新智具身）+ 复旦大学 TEAI | [arXiv:2608.29601](https://arxiv.org/abs/2608.29601) | 触觉智能时代的触觉基础模型工作 |
+| SoftVTBench | Tuojing Intelligence + 清华等 13 家单位 | [arXiv:2608.18701](https://arxiv.org/abs/2608.18701) | 变形感知视触觉数据集与 benchmark（柔性物体） |
+| ViHaTeleop | 日本东北大学｜**IROS 2026 录用** | [arXiv:2608.16572](https://arxiv.org/abs/2608.16572) | 低成本轻量视触觉遥操作系统 |
 
 ## B. 硬件 / 开源 / 数据集（9 月）
 
