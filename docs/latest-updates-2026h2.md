@@ -6,6 +6,46 @@
 
 ---
 
+# 📅 2026-09-22 ~ 09-27 增量（arXiv API 权威抓取）
+
+> **本轮改用 arXiv 官方 API 直接抓取**（`cat:cs.RO` + `submittedDate:[20260922 TO 20260928]`），而非搜索摘要：窗口内 cs.RO 共 **275 篇**，关键词筛选得 **25 篇**灵巧手/触觉/遥操作相关工作。机构字段 arXiv API 不提供，**待核验**（不猜测）。
+
+| 论文 | 第一作者 | 公告日 | 链接 | 一句话 |
+| --- | --- | --- | --- | --- |
+| Real-Time Force Regulation for Whole-Hand Dexterous Grasping | Sang Min Kim 等 6 人 | 2026-09-24 | [arXiv:2609.30082](https://arxiv.org/abs/2609.30082) | 全手灵巧抓取的实时力调节 |
+| Res-HIL: Human-Guided Residual Reinforcement Learning for Sample-Efficient Dexterous Manipulation | Mariia Iavorskaia 等 4 人 | 2026-09-24 | [arXiv:2609.30023](https://arxiv.org/abs/2609.30023) | 人类引导残差 RL，样本高效灵巧操作 |
+| Self-Supervised Anchoring of Fingertip Sensing to Proprioception and Proactive Actions for Robot Imitation Learning | Tomohiro Motoda 等 9 人 | 2026-09-24 | [arXiv:2609.29822](https://arxiv.org/abs/2609.29822) | 指尖传感与本体感觉的自监督锚定 |
+| PolyUMI: Accessible Visual-Tactile-Audio Data Collection for Object Inference and Manipulation | Conor W. Hayes 等 9 人 | 2026-09-24 | [arXiv:2609.29760](https://arxiv.org/abs/2609.29760) | 视觉-触觉-听觉数据采集（UMI 系扩展） |
+| DA-GRD: Decision-Aware Grasp-Relevant Disambiguation for tactile recovery under perception-to-execution mismatches | Haoran Wang 等 9 人 | 2026-09-24 | [arXiv:2609.29065](https://arxiv.org/abs/2609.29065) | 触觉恢复：感知-执行退化下的抓取消歧 |
+| Outcome-Sensitive Motion Search for Impact-Aware Dexterous Catching | Guorui Pei 等 8 人 | 2026-09-24 | [arXiv:2609.29020](https://arxiv.org/abs/2609.29020) | 冲击感知的灵巧接物 |
+| Morphometric Imitation: From Morphology and Contact Aware Hand Retargeting to Sim-to-Real Visuomotor Policy | Tara Sadjadpour 等 8 人 | 2026-09-23 | [arXiv:2609.28660](https://arxiv.org/abs/2609.28660) | 形态+接触感知手部重定向 → sim-to-real 视觉运动 |
+| LiMA: Bridging Long-term Imagination to Real-time Dexterous Manipulation via Asynchronous Diffusion | Ning Chen 等 8 人 | 2026-09-23 | [arXiv:2609.28431](https://arxiv.org/abs/2609.28431) | 长时想象→实时灵巧操作（异步扩散） |
+| Context-Continuous Preference Learning for Exoskeleton Personalization | Sunin Baek 等 3 人 | 2026-09-23 | [arXiv:2609.28427](https://arxiv.org/abs/2609.28427) | 外骨骼个性化连续偏好学习 |
+| DEAL-Grasp: Decoupled Alignment Representation for Geometry-Aware Dexterous Grasp Generation | Fuqiang Zhao 等 2 人 | 2026-09-23 | [arXiv:2609.28131](https://arxiv.org/abs/2609.28131) | 几何感知灵巧抓取生成 |
+| Learning a Speed-adaptive Hip Exoskeleton Control Policy Via Sim-to-real Reinforcement Learning | Bin Li 等 7 人 | 2026-09-23 | [arXiv:2609.28027](https://arxiv.org/abs/2609.28027) | 速度自适应髋部外骨骼 sim-to-real RL |
+| EmbodiedSWE: Coding Agents for Long Horizon Dexterous Robotics | Haoxiang You 等 19 人 | 2026-09-23 | [arXiv:2609.27308](https://arxiv.org/abs/2609.27308) | 编码智能体驱动的长时程灵巧机器人 |
+| A Quasi-Direct-Drive Underactuated Asymmetric Hand for Dexterous and Efficient Grasping and Manipulation | Benjamin Davis 等 3 人 | 2026-09-23 | [arXiv:2609.27240](https://arxiv.org/abs/2609.27240) | **准直驱欠驱动非对称手（硬件）** |
+| MATE: Multi-Agent Virtual Teleoperation Platform for Humanoid Collaboration Data Collection | Yichuan Yu 等 9 人 | 2026-09-22 | [arXiv:2609.26520](https://arxiv.org/abs/2609.26520) | 多智能体虚拟遥操作平台（人形协作采数） |
+| VisForce: Visual Grounding of Current and Desired Forces for Goal-Conditioned Dexterous Manipulation | Jung-Woo Lee 等 2 人 | 2026-09-22 | [arXiv:2609.25785](https://arxiv.org/abs/2609.25785) | 视觉接地电流/目标力的灵巧操作 |
+| The Cartesian Hand: In-Hand Manipulation with All-Linear Fingers | Boxi Xia 等 6 人 | 2026-09-22 | [arXiv:2609.25696](https://arxiv.org/abs/2609.25696) | **全线性手指 Cartesian Hand 手内操作** |
+| Relative Contact Velocity-Controlled Hand-Object Mechanism for Dexterous Tool Manipulation | Sunyu Wang 等 3 人 | 2026-09-22 | [arXiv:2609.25619](https://arxiv.org/abs/2609.25619) | 相对接触速度控制的手-物机构（工具操作） |
+| Digital Twin-Driven VR Teleoperation with Multi-View Spatial Perception for Surgical Robots | Chang Liu 等 8 人 | 2026-09-22 | [arXiv:2609.25527](https://arxiv.org/abs/2609.25527) | 数字孪生驱动 VR 遥操作 |
+| EgoSpeedUp: Transferring Human Manipulation Tempo to Robot Policies | Hanbit Oh 等 3 人 | 2026-09-24 | [arXiv:2609.29310](https://arxiv.org/abs/2609.29310)  |
+| Streaming-WAM: Action-Conditioned World-Action Model for Asynchronous Robot Manipulation | Xuyao Huang 等 7 人 | 2026-09-24 | [arXiv:2609.28927](https://arxiv.org/abs/2609.28927)  |
+| DeltaWAM: Delta World Action Models for Bimanual Manipulation | Han Yan 等 9 人 | 2026-09-23 | [arXiv:2609.28811](https://arxiv.org/abs/2609.28811)  |
+| PointCast: One World Model for Rigid, Articulated, and Deformable Object Manipulation | Hantao Ye 等 7 人 | 2026-09-23 | [arXiv:2609.28393](https://arxiv.org/abs/2609.28393)  |
+| Contact-Implicit Stein Projected ADMM for Discovery of Diverse Contact-Rich Manipulation Strategies | Hrishikesh Sathyanarayan 等 3 人 | 2026-09-23 | [arXiv:2609.28299](https://arxiv.org/abs/2609.28299)  |
+| GLoTouch: Global-to-Local Haptic Perception Using a Parallel Gripper for Object Search, Recognition, and Grasping Without External Vision | Zonglin Li 等 6 人 | 2026-09-23 | [arXiv:2609.27695](https://arxiv.org/abs/2609.27695)  |
+| SafeLoop: Risk-Aware Rollback for Vision-Language-Action Manipulation | Zeyu Lou 等 5 人 | 2026-09-22 | [arXiv:2609.26313](https://arxiv.org/abs/2609.26313)  |
+**本批次看点**
+- **硬件两篇**：准直驱欠驱动非对称手（2609.27240）、全线性手指 Cartesian Hand（2609.25696）——直驱/欠驱动路线持续活跃
+- **触觉线延续 9 月主线**：指尖自监督锚定（2609.29822）、触觉恢复（2609.29065）、GLoTouch 全局-局部触觉（2609.27695）
+- **世界模型/扩散策略密集**：LiMA 异步扩散（2609.28431）、Streaming-WAM（2609.28927）、DeltaWAM（2609.28811）、PointCast（2609.28393）
+- **安全/鲁棒性成新议题**：SafeLoop 风险感知回滚（2609.26313，**IROS 2026 录用**）、IROS 2026 Workshop 机器人安全（2609.26868）
+- **数据采集**：PolyUMI 视触听采集（2609.29760）、MATE 遥操作平台（2609.26520）、EgoSpeedUp 操作节奏迁移（2609.29310）
+
+---
+
 # 📅 2026-09 中下旬增量（09-12 ~ 09-21）
 
 ## A. 新论文（arXiv 2609.12xxx 及以后）

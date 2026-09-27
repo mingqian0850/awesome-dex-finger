@@ -2,16 +2,16 @@
 
 灵巧手 / 灵巧操作 / 机器人操作领域的社区 Awesome 列表汇总。
 
-> ⏱️ Star/许可证数据为 **2026-09-21 GitHub API 实时刷新值**；"最后推送"为 repo 最近推送日期。
+> ⏱️ Star/许可证数据为 **2026-09-27 GitHub API 实时刷新值**；"最后推送"为 repo 最近推送日期。
 
 ## 灵巧操作 / 灵巧手（最对口）
 
 | Awesome 列表 | Stars | 内容 | 更新状态 |
 | --- | --- | --- | --- |
-| [BaiShuanghao/Awesome-Robotics-Manipulation](https://github.com/BaiShuanghao/Awesome-Robotics-Manipulation) | 1145 | 机器人操作论文大全（论文 + 代码 + 数据集 + 相关网站），中文友好 | 活跃（2026-09 推送） |
-| [Tsunami-kun/awesome-humanoid-manipulation](https://github.com/Tsunami-kun/awesome-humanoid-manipulation) | 161 | 人形操作、灵巧操作、双手操作、手内操作、类人操作论文合集（与灵巧手最对口） | 活跃（2026-06 推送） |
+| [BaiShuanghao/Awesome-Robotics-Manipulation](https://github.com/BaiShuanghao/Awesome-Robotics-Manipulation) | 1154 | 机器人操作论文大全（论文 + 代码 + 数据集 + 相关网站），中文友好 | 活跃（2026-09 推送） |
+| [Tsunami-kun/awesome-humanoid-manipulation](https://github.com/Tsunami-kun/awesome-humanoid-manipulation) | 162 | 人形操作、灵巧操作、双手操作、手内操作、类人操作论文合集（与灵巧手最对口） | 活跃（2026-06 推送） |
 | [curieuxjy/Awesome_Manipulation](https://github.com/curieuxjy/Awesome_Manipulation) | 140 | 操作（Manipulation）方向精选清单 | 活跃（2026-07 推送） |
-| [CyanHaze/Awesome-Dexterous-Hands](https://github.com/CyanHaze/Awesome-Dexterous-Hands) | 32 | 灵巧手方向论文、数据集、仿真器、硬件平台清单 | 活跃（2026-09 推送） |
+| [CyanHaze/Awesome-Dexterous-Hands](https://github.com/CyanHaze/Awesome-Dexterous-Hands) | 35 | 灵巧手方向论文、数据集、仿真器、硬件平台清单 | 活跃（2026-09 推送） |
 | [chang-xinhai/Awesome-Dexterous-Manipulation](https://github.com/chang-xinhai/Awesome-Dexterous-Manipulation) | 20 | 灵巧操作、触觉感知方向清单 | 活跃（2026-08 推送） |
 | [huangjund/awesome-UMI-Papers](https://github.com/huangjund/awesome-UMI-Papers) | 18 | UMI（Universal Manipulation Interface）及同类论文/数据集/代码/硬件 | 活跃（2026-09 推送） |
 | [HaoxuanXU1024/awesome_dexterous_hand](https://github.com/HaoxuanXU1024/awesome_dexterous_hand) | 2 | 灵巧手论文列表 | 活跃（2026-09 推送） |
