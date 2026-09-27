@@ -57,7 +57,8 @@
 | Bidex_Manus_Teleop | 106 | LEAP Hand + Manus 数据手套的双手遥操作 | [leap-hand/Bidex_Manus_Teleop](https://github.com/leap-hand/Bidex_Manus_Teleop) |
 | DexWM | 102 | Meta：世界模型从人类视频学灵巧手-物交互，代码 + 数据集开源 | [facebookresearch/dexwm](https://github.com/facebookresearch/dexwm) · [HF 数据集](https://huggingface.co/datasets/facebook/dexwm) |
 | RoboTok-Code | 52 | NVIDIA + 莱斯大学：互联网级人类示范检索数据引擎（2026-09 发布，活跃） | [Rice-RobotPI-Lab/RoboTok-Code](https://github.com/Rice-RobotPI-Lab/RoboTok-Code) |
-| UnifoLM-WLA-1.0 | — | 宇树人形基础模型（2026-09 全面开源）：单模型 64 种任务、2500 小时真机数据 | [宇树开源](https://www.zhidx.com/p/592980.html) |
+| UnifoLM-WLA-1.0 / unifolm-wla | 187 | 宇树开源 WLA（World-Language-Action）人形基础模型与代码（Apache-2.0，2026-09） | [unitreerobotics/unifolm-wla](https://github.com/unitreerobotics/unifolm-wla) · [解读](https://www.zhidx.com/p/592980.html) |
+| dexmimicgen_tactile | 0 | 触觉版 DexMimicGen（2026-09 新建） | [flyingGH/dexmimicgen_tactile](https://github.com/flyingGH/dexmimicgen_tactile) |
 | DOGlove | — | 低成本开源力反馈动捕手套（清华, RSS 2025），代码见项目页 | [项目页](https://do-glove.github.io/) |
 
 ## 四、中文社区开源项目

@@ -8,6 +8,8 @@
 
 # 📅 2026-09-22 ~ 09-27 增量（arXiv API 权威抓取）
 
+## A. 新论文（arXiv API 权威抓取）
+
 > **本轮改用 arXiv 官方 API 直接抓取**（`cat:cs.RO` + `submittedDate:[20260922 TO 20260928]`），而非搜索摘要：窗口内 cs.RO 共 **275 篇**，关键词筛选得 **25 篇**灵巧手/触觉/遥操作相关工作。机构字段 arXiv API 不提供，**待核验**（不猜测）。
 
 | 论文 | 第一作者 | 公告日 | 链接 | 一句话 |
@@ -37,12 +39,61 @@
 | Contact-Implicit Stein Projected ADMM for Discovery of Diverse Contact-Rich Manipulation Strategies | Hrishikesh Sathyanarayan 等 3 人 | 2026-09-23 | [arXiv:2609.28299](https://arxiv.org/abs/2609.28299)  |
 | GLoTouch: Global-to-Local Haptic Perception Using a Parallel Gripper for Object Search, Recognition, and Grasping Without External Vision | Zonglin Li 等 6 人 | 2026-09-23 | [arXiv:2609.27695](https://arxiv.org/abs/2609.27695)  |
 | SafeLoop: Risk-Aware Rollback for Vision-Language-Action Manipulation | Zeyu Lou 等 5 人 | 2026-09-22 | [arXiv:2609.26313](https://arxiv.org/abs/2609.26313)  |
+| EgoWild2Dex: Learning Dexterous Robotic Manipulation from In-the-Wild Human Experience | Kunyang Lin 等 11 人 | 2026-09-20 | [arXiv:2609.23755](https://arxiv.org/abs/2609.23755) | 从野外第一视角人类经验学灵巧操作 |
+| BiView-Touch: Learning Bimanual Tactile Representations by Cross-Hand Completion | Chenxin Liang 等 6 人 | 2026-09-20 | [arXiv:2609.23352](https://arxiv.org/abs/2609.23352) | 跨手补全学双臂触觉表征（已投 ICRA 2027） |
+| Touch2Robot: Robot Touch in the Human Demonstration Loop | Shengcheng Luo 等 9 人 | 2026-09-21 | [arXiv:2609.24660](https://arxiv.org/abs/2609.24660) | 把机器人触觉放进人类示教闭环 |
+| DexTacWAM: A Visuo-Tactile World-Action Model for Dexterous Manipulation | Haoran Yuan 等 7 人 | 2026-09-21 | [arXiv:2609.24976](https://arxiv.org/abs/2609.24976) · [项目页](https://dextacwam.github.io/) | 视触觉世界-动作模型（多指触觉编码器 + 触觉压缩器） |
+
 **本批次看点**
 - **硬件两篇**：准直驱欠驱动非对称手（2609.27240）、全线性手指 Cartesian Hand（2609.25696）——直驱/欠驱动路线持续活跃
 - **触觉线延续 9 月主线**：指尖自监督锚定（2609.29822）、触觉恢复（2609.29065）、GLoTouch 全局-局部触觉（2609.27695）
 - **世界模型/扩散策略密集**：LiMA 异步扩散（2609.28431）、Streaming-WAM（2609.28927）、DeltaWAM（2609.28811）、PointCast（2609.28393）
 - **安全/鲁棒性成新议题**：SafeLoop 风险感知回滚（2609.26313，**IROS 2026 录用**）、IROS 2026 Workshop 机器人安全（2609.26868）
 - **数据采集**：PolyUMI 视触听采集（2609.29760）、MATE 遥操作平台（2609.26520）、EgoSpeedUp 操作节奏迁移（2609.29310）
+
+---
+
+
+## B. 硬件 / 开源 / 产业（09-22 ~ 09-27）
+
+| 项目 | 主体 | 日期 | 链接 | 要点 |
+| --- | --- | --- | --- | --- |
+| **Optimus 手部成量产头号瓶颈** | Tesla | 09-26/27 | [界面](https://www.jiemian.com/article/15141173.html) · [21 世纪经济报道](https://www.21jingji.com/article/20260926/herald/2f8de64c207e5d634e840fa6782ba139.html) | 周产量提升约 10 倍至**数百台**，但「**机械手组装困难** + AI 能力」被点名为规模化阻碍——灵巧手从"性能竞赛"转向"**可制造性竞赛**" |
+| **Dex5-S 灵巧手** | 宇树 Unitree | 09-21 起发酵 | [腾讯新闻](https://news.qq.com/rain/a/20260921A0BJ2M00) | 22 自由度、**3.99 万元起**、真手 1:1 尺寸——以"手机价"切入价格战 |
+| **VIVA 灵巧手 + CADA 具身大模型** | 镜识科技 | 09-24 | [OFweek](https://robot.ofweek.com/2026-09/ART-898890-8120-30704831.html) | **全球首次人机实时四手联弹**；VIVA 可创作编曲、演奏高难度曲目 |
+| **混驱 + 直驱双灵巧手首发** | 曦诺未来 Xynova | 09-24/25（数贸会） | [盖世汽车](https://auto.gasgoo.com/news/202609/24I70473110C601.shtml) | 两条技术路线首次同台；创始人直言"赛道竞争激烈，但**技术尚未收敛**" |
+| ROH-AP003 触觉灵巧手 | 傲意科技 × 迈来芯 Melexis | 见来源 | [oymotion](https://www.oymotion.com/news8/443) | 深化战略合作并全球首发新一代触觉灵巧手 |
+| Tacta Systems 首个海外据点 | Tacta Systems（美国） | 09-24 | [联合早报](https://www.zaobao.com/finance/singapore/story20260924-9730486) | 触觉/手部公司落子新加坡，出海信号 |
+| **unifolm-wla（新开源）** | 宇树 Unitree | 09-20 | [GitHub](https://github.com/unitreerobotics/unifolm-wla)（**187★**, Apache-2.0） | 宇树开源 WLA（World-Language-Action）仓库，面向具身操作 |
+| dexmimicgen_tactile（新开源） | flyingGH | 09-11 | [GitHub](https://github.com/flyingGH/dexmimicgen_tactile) | 触觉版 DexMimicGen |
+| EgoScale / Do as I Do | Sharpa | 背景 | [Sharpa 研究页](https://www.sharpa.com/blogs/research/egoscale-20-000-hours-of-video-grow-a-robot-hand-opening-the-scaling-law-era-of-dexterous-manipulation) | **2 万小时**第一视角视频数据 + 从互联网视频到灵巧 rollout |
+
+## C. 行业事件（09-22 ~ 09-27）
+
+- **帕西尼完成 IPO 辅导备案**（09-23）：估值突破 **100 亿**、累计融资超 40 亿元，比亚迪/三星入局，"具身触觉第一股"竞速（[cinn](https://www.cinn.cn/yc/2026/09-27/vrGgGbXr.html)）
+- **他山科技完成股改**（09-23）：机器人触觉头部企业，报道称市占率超 **80%**，同步启动 C 轮（[东方财富](https://finance.eastmoney.com/a/202609233882774556.html)）
+- **北京触觉团队密集融资**（09-25）："用机器剥小龙虾，北京团队连拿几个亿"
+- **数贸会 09-23 杭州开幕**：杭州"六小龙""新八骏"首次同台，灵巧手成展区主角
+- **高工灵巧操作未来技术大会**（北京中关村）：6 家企业 6 种回答；本轮未检索到现场量化成果发布
+- **智元第 20000 台通用具身机器人下线交付长隆集团**：远征 A3 Ultra，首期 300 台常驻主题乐园
+- **特斯拉审厂后续**：首站宁波；得州 Optimus 超级工厂 6 个月成型、进入"制造验证阶段"
+- **产业判断类报道集中出现**：灵巧手价格"雪崩"（百万元 → 两万元）、GGII《2026 中国工业具身智能产业发展蓝皮书》、TechTarget《China leads dexterous hand supply for humanoids》
+- 国标进度：09-09 已报道"预计年底公示"，09-22 后无新进展；工信部就人形机器人产业标准体系征求意见
+
+## D. IROS 2026（09-27 开幕，匹兹堡）
+
+- **官方**：[站点](https://2026.ieee-iros.org/) · [Program](https://2026.ieee-iros.org/program/program_overview/) · [Keynotes](https://2026.ieee-iros.org/program/keynotes/) · [Awards](https://2026.ieee-iros.org/program/awards/)
+- **AIhub 前瞻**（09-24）：[What's coming up at #IROS2026?](https://aihub.org/2026/09/24/whats-coming-up-at-iros2026/)
+- **最贴合灵巧手的 workshop**：[Concurrent Prehensile and Nonprehensile Manipulation（多阶段灵巧任务）](https://dexmulti.github.io/)
+- 其他：Geometric Representations in Robotics WS、Neuro-Symbolic AI WS、Sim2Real & Classical Control WS；日本 AIST 6 篇发表 + workshop
+- 社区索引：[IROS 2026 VLA Manipulation Survey](https://github.com/Heungwoo/research/wiki/IROS-2026-VLA-Manipulation-Survey)
+- ⚠️ **未能核实**：IROS 2026 灵巧手专属 keynote 名单、最佳论文获奖名单（会议 09-27 才开幕，获奖通常会中公布）
+
+## E. 这 6 天最值得注意的 3 件事
+
+1. **"手"被公开确认为 Optimus 量产头号瓶颈**：周产数百台但"机械手组装困难"——灵巧手进入"可制造性竞赛"
+2. **同一周两个"全球首次" + 触觉赛道集体冲刺 IPO**：镜识科技人机四手联弹、曦诺未来混驱/直驱同台；帕西尼 IPO 辅导备案（估值 100 亿+）、他山科技股改
+3. **论文主线从"策略"转向"触觉 + 世界模型 + 人类数据"**：BiView-Touch/Touch2Robot/DexTacWAM（触觉）、EgoWild2Dex（人类经验迁移）、相对接触速度与整手实时力调节（力学底层）——"**触觉先验/接触动力学**"正在取代单纯抓取合成成为瓶颈议题
 
 ---
 
@@ -103,6 +154,15 @@
 - **社区索引**：[IROS 2026 Cross-Embodiment WM](https://github.com/Heungwoo/research/wiki/IROS-2026-Cross-Embodiment-WM)、[VLA Manipulation Survey](https://github.com/Heungwoo/research/wiki/IROS-2026-VLA-Manipulation-Survey)
 - **判断**：触觉世界模型 / 手内操作的主战场今年实际在 **CoRL 2026**（Sharpa 9/17 开源即挂 CoRL 名号），IROS 更偏硬件与技能实现
 
+
+## E. 这 10 天最值得注意的 3 件事
+
+1. **触觉从"传感器"变成"世界模型"**：DexTouch-WM + TacSushi + STAR 三篇集中出现（9/13-9/20），产业侧同日 Sharpa 开源"世界联觉模型"打通 NVIDIA Tacmap 触觉仿真、千觉发布整手触觉 2.0。**共识正在形成：瓶颈不是自由度，而是接触状态的预判与表征。**
+2. **"手"与"脑"同时在 9 月落地**：Optimus 量产审厂（9/19）+ 宇树开源 UnifoLM-WLA-1.0（9/20）；同时禾川科技 9/18 明确"仍处手工装配小批量"作为降温对照
+3. **灵巧手的"评测"与"用法"双双被重新定义**：ETH Zurich 以手指为腿行走（非常规本体使用）+ HANDS 2026 挑战赛结果论文（竞赛化基准）
+
+---
+
 ## F. 核验汇总与 CoRL 2026 录用清单
 
 > 本节内容经 **arXiv 官方 API + 官方 HTML 全文作者块**核验（非搜索摘要推测），完整核验表见附录 [verification-2026-09.md](verification-2026-09.md)。
@@ -126,14 +186,6 @@
 - **TacBPM**（Sharpa）：触觉条件行为先验模型；**Touch2Trace / SlipSense**（Analog Devices）：线缆追踪 / 滑动检测（CoRL 2026）
 - **Honda Research Institute USA** 两篇 MPC 路线；**Meta Reality Labs** 腕戴压力阵列估计全手位姿与接触力
 - **UniDex-ViTac / GIFT**：论文未打印机构，未能核验（未作猜测）
-
----
-
-## E. 这 10 天最值得注意的 3 件事
-
-1. **触觉从"传感器"变成"世界模型"**：DexTouch-WM + TacSushi + STAR 三篇集中出现（9/13-9/20），产业侧同日 Sharpa 开源"世界联觉模型"打通 NVIDIA Tacmap 触觉仿真、千觉发布整手触觉 2.0。**共识正在形成：瓶颈不是自由度，而是接触状态的预判与表征。**
-2. **"手"与"脑"同时在 9 月落地**：Optimus 量产审厂（9/19）+ 宇树开源 UnifoLM-WLA-1.0（9/20）；同时禾川科技 9/18 明确"仍处手工装配小批量"作为降温对照
-3. **灵巧手的"评测"与"用法"双双被重新定义**：ETH Zurich 以手指为腿行走（非常规本体使用）+ HANDS 2026 挑战赛结果论文（竞赛化基准）
 
 ---
 
