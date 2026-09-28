@@ -23,6 +23,7 @@
 | [docs/latest-updates-2026h2.md](docs/latest-updates-2026h2.md) | 最新动态跟踪（2026-09 中下旬增量 + 9 月月报 + 6-8 月双月报） |
 | [docs/verification-2026-09.md](docs/verification-2026-09.md) | 论文核验附录（arXiv API 级核验：机构、会议录用、标题纠正） |
 | [awesome-lists.md](awesome-lists.md) | 相关 Awesome 列表导航 |
+| [scripts/](scripts/README.md) | 🛠️ 更新脚本（arXiv 论文扫描 + GitHub 数据刷新） |
 
 ## ✨ 快速一览（截至 2025 年 SOTA 概览）
 

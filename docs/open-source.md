@@ -27,7 +27,7 @@
 | mujoco_menagerie | 4128 | MuJoCo 高质量模型合集：shadow_hand、shadow_dexee、leap_hand、aero_hand 等 | [google-deepmind/mujoco_menagerie](https://github.com/google-deepmind/mujoco_menagerie) |
 | IsaacGymEnvs | 2954 | Isaac Gym 官方环境，含 ShadowHand OpenAI 任务（取物/重定向/压块等） | [isaac-sim/IsaacGymEnvs](https://github.com/isaac-sim/IsaacGymEnvs) |
 | genie_sim | 1408 | 智元机器人仿真平台（支持灵巧手） | [AgibotTech/genie_sim](https://github.com/AgibotTech/genie_sim) |
-| DexterousHands (Bi-DexHands) | 1105 | Isaac Gym 双灵巧手操作环境（NeurIPS 2022） | [PKU-MARL/DexterousHands](https://github.com/PKU-MARL/DexterousHands) |
+| DexterousHands (Bi-DexHands) | 1106 | Isaac Gym 双灵巧手操作环境（NeurIPS 2022） | [PKU-MARL/DexterousHands](https://github.com/PKU-MARL/DexterousHands) |
 | dex-urdf | 382 | 多款灵巧手（Shadow/LEAP/DexHand 等）统一 URDF 资源库 | [dexsuite/dex-urdf](https://github.com/dexsuite/dex-urdf) |
 | Adroit | 80 | ShadowHand/ADROIT 的 MuJoCo 模型与环境（手内操作、开门等） | [vikashplus/Adroit](https://github.com/vikashplus/Adroit) |
 | mjlab_hand | 52 | 基于 mjlab（Isaac Lab 平替）的灵巧手操作任务 | [ruoyiqiao/mjlab_hand](https://github.com/ruoyiqiao/mjlab_hand) |
@@ -41,7 +41,7 @@
 | AgiBot-World | 3195 | 智元百万级真机操作数据集（IROS 2025） | [OpenDriveLab/AgiBot-World](https://github.com/OpenDriveLab/AgiBot-World) |
 | Humanoid-Gym | 2093 | 人形机器人端到端 RL 训练框架（零样本 sim2real，含灵巧手场景） | [roboterax/Humanoid-Gym](https://github.com/roboterax/Humanoid-Gym) |
 | xr_teleoperate | 1681 | 宇树 XR 遥操作 | [unitreerobotics/xr_teleoperate](https://github.com/unitreerobotics/xr_teleoperate) |
-| dex-retargeting | 1259 | 人手运动到机器人手的运动重定向（该领域最主流工具库） | [dexsuite/dex-retargeting](https://github.com/dexsuite/dex-retargeting) |
+| dex-retargeting | 1260 | 人手运动到机器人手的运动重定向（该领域最主流工具库） | [dexsuite/dex-retargeting](https://github.com/dexsuite/dex-retargeting) |
 | hamer | 1153 | HaMeR 手部网格恢复基础模型（Meta, CVPR 2024, MIT） | [geopavlakos/hamer](https://github.com/geopavlakos/hamer) |
 | unitree_lerobot | 772 | 宇树 × LeRobot 灵巧手学习 | [unitreerobotics/unitree_lerobot](https://github.com/unitreerobotics/unitree_lerobot) |
 | OpenHomie | 616 | 同构外骨骼座舱 + 人形全身遥操作（上海AI实验室） | [InternRobotics/OpenHomie](https://github.com/InternRobotics/OpenHomie) |
@@ -57,7 +57,7 @@
 | Bidex_Manus_Teleop | 106 | LEAP Hand + Manus 数据手套的双手遥操作 | [leap-hand/Bidex_Manus_Teleop](https://github.com/leap-hand/Bidex_Manus_Teleop) |
 | DexWM | 102 | Meta：世界模型从人类视频学灵巧手-物交互，代码 + 数据集开源 | [facebookresearch/dexwm](https://github.com/facebookresearch/dexwm) · [HF 数据集](https://huggingface.co/datasets/facebook/dexwm) |
 | RoboTok-Code | 52 | NVIDIA + 莱斯大学：互联网级人类示范检索数据引擎（2026-09 发布，活跃） | [Rice-RobotPI-Lab/RoboTok-Code](https://github.com/Rice-RobotPI-Lab/RoboTok-Code) |
-| UnifoLM-WLA-1.0 / unifolm-wla | 187 | 宇树开源 WLA（World-Language-Action）人形基础模型与代码（Apache-2.0，2026-09） | [unitreerobotics/unifolm-wla](https://github.com/unitreerobotics/unifolm-wla) · [解读](https://www.zhidx.com/p/592980.html) |
+| UnifoLM-WLA-1.0 / unifolm-wla | 190 | 宇树开源 WLA（World-Language-Action）人形基础模型与代码（Apache-2.0，2026-09） | [unitreerobotics/unifolm-wla](https://github.com/unitreerobotics/unifolm-wla) · [解读](https://www.zhidx.com/p/592980.html) |
 | dexmimicgen_tactile | 0 | 触觉版 DexMimicGen（2026-09 新建） | [flyingGH/dexmimicgen_tactile](https://github.com/flyingGH/dexmimicgen_tactile) |
 | DOGlove | — | 低成本开源力反馈动捕手套（清华, RSS 2025），代码见项目页 | [项目页](https://do-glove.github.io/) |
 

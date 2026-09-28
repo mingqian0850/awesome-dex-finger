@@ -54,6 +54,26 @@
 ---
 
 
+## A2. 周五（09-25）批次补录（arXiv API 二次扫描新增）
+
+> 09-25（周五）完整批次在上一轮抓取后入库，二次扫描新增 **22 篇**，以下为最相关的 13 篇（机构待核验）。
+
+| 论文 | 第一作者 | 公告日 | 链接 | 一句话 |
+| --- | --- | --- | --- | --- |
+| Vision-Based 6-DoF Grasp Pose Estimation for Robot Cloth Unfolding | Domen Tabernik 等 5 人 | 2026-09-25 | [arXiv:2609.31452](https://arxiv.org/abs/2609.31452) | 布料展开的视觉 6-DoF 抓取位姿估计 |
+| CognitiveReality: Robot-Agnostic Semantic Gaussian Mapping with an LLM Agent for Immersive Collaborative VR Teleoperation | Timofei Kozlov 等 6 人 | 2026-09-25 | [arXiv:2609.31418](https://arxiv.org/abs/2609.31418) | LLM 智能体驱动的语义高斯建图 + 协作 VR 遥操作 |
+| See to Reach, Feel to Grasp: Learning A Blind Grasp Reflex for Anthropomorphic Robotic Hands | Alexander Alexiev 等 6 人 | 2026-09-25 | [arXiv:2609.31323](https://arxiv.org/abs/2609.31323) | **拟人手"盲抓反射"**：只看不摸到只摸不看（Anthropomorphic Robotic Hands） |
+| TACTIC: Understanding Tactile Encoders and Conditioning for Contact-rich Robot Manipulation Policies | Seongjin Bien 等 9 人 | 2026-09-25 | [arXiv:2609.30969](https://arxiv.org/abs/2609.30969) | 触觉编码器与条件化系统研究（contact-rich 策略） |
+| VisTacAlign: Co-Training Dexterous Policies on Tactile Human and Robot Demonstrations | Julien Poffet 等 8 人 | 2026-09-25 | [arXiv:2609.30959](https://arxiv.org/abs/2609.30959) | 触觉人体演示 + 机器人演示协同训练灵巧策略 |
+| PHASE: Compliance-Enabled Tactile Phase Retrieval for Few-Shot Insertion Learning | Jeremy Siburian 等 6 人 | 2026-09-25 | [arXiv:2609.30889](https://arxiv.org/abs/2609.30889) | 顺应性触觉相位检索，少样本插拔学习 |
+| Can a Robot Read Braille? - Learning to Adapt Contact via Imitation Learning for Tactile Braille Recognition | Xi Chen 等 10 人 | 2026-09-25 | [arXiv:2609.30676](https://arxiv.org/abs/2609.30676) | 机器人能读盲文吗？模仿学习自适应接触的触觉盲文识别 |
+| Frequency-Modulated Piezoelectric Haptic Display | Boyuan Liang 等 3 人 | 2026-09-24 | [arXiv:2609.30626](https://arxiv.org/abs/2609.30626) | 调频压电触觉显示（触觉反馈硬件） |
+| GraspTwin: Zero-Shot Task-Oriented Grasp Optimization via a Digital Twin | Daniel J. Evans 等 4 人 | 2026-09-24 | [arXiv:2609.30543](https://arxiv.org/abs/2609.30543) | 数字孪生驱动的零样本任务导向抓取优化 |
+| Tactile Sensing Array for Multi-Phalanx Sensing in Humanoid Hands | Neel Adwani 等 4 人 | 2026-09-24 | [arXiv:2609.30506](https://arxiv.org/abs/2609.30506) | **人形手多指节触觉传感阵列（硬件）** |
+| Simple Torque-Observation Alignment for Zero-Shot Sim-to-Real Grasping with a Direct-Drive Gripper | Doyoung Kim 等 7 人 | 2026-09-24 | [arXiv:2609.29031](https://arxiv.org/abs/2609.29031) | 力矩观测对齐实现直驱夹爪零样本 sim-to-real 抓取 |
+| Fine Wrist Control as a Marker of Surgical Teleoperation Expertise | Mary Kate Gale 等 6 人 | 2026-09-22 | [arXiv:2609.27160](https://arxiv.org/abs/2609.27160) | 精细腕部控制作为手术遥操作专家水平标志 |
+| What is the Better Curriculum: Controller-Shaped Grasping Behavior for Contact Force-Sensitive Manipulation | Ziyan Feng 等 9 人 | 2026-09-22 | [arXiv:2609.25887](https://arxiv.org/abs/2609.25887) | 控制器塑造的抓取行为课程（接触力敏感操作） |
+
 ## B. 硬件 / 开源 / 产业（09-22 ~ 09-27）
 
 | 项目 | 主体 | 日期 | 链接 | 要点 |
@@ -81,6 +101,16 @@
 - 国标进度：09-09 已报道"预计年底公示"，09-22 后无新进展；工信部就人形机器人产业标准体系征求意见
 
 ## D. IROS 2026（09-27 开幕，匹兹堡）
+
+### 🔥 IROS 现场：Sharpa 三箭齐发（09-28，全球首发）
+
+**Sharpa 在 IROS 2026 发布三款旗舰新品**（[雷锋网](https://www.leiphone.com/category/robot/PD6wmXBcwh6pLqU5.html) · [36氪](https://36kr.com/newsflashes/4002607604797576) · [极客公园](https://www.geekpark.net/news/371098) · [投资界](https://news.pedaily.cn/202609/569684.shtml)）：
+- **灵巧手 W02** — 新一代灵巧手
+- **机器人 D01** — 人形机器人本体
+- **数据手套 AE01** — 数据采集手套（呼应"采集硬件即数据平台"趋势）
+- 现场六大实机演示；被称为"三位一体"（手 + 本体 + 数据采集）
+- 关联：Sharpa 9/17 刚在 CoRL 2026 开源**世界联觉模型**（WM-Craftnet），并于 09 月披露累计融资超 45 亿元、估值约 220 亿元
+
 
 - **官方**：[站点](https://2026.ieee-iros.org/) · [Program](https://2026.ieee-iros.org/program/program_overview/) · [Keynotes](https://2026.ieee-iros.org/program/keynotes/) · [Awards](https://2026.ieee-iros.org/program/awards/)
 - **AIhub 前瞻**（09-24）：[What's coming up at #IROS2026?](https://aihub.org/2026/09/24/whats-coming-up-at-iros2026/)
