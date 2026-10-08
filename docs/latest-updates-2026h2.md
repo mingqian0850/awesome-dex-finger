@@ -1,8 +1,36 @@
 # 🆕 2026 下半年动态跟踪（2026-06 至今）
 
 > 灵巧手领域最新动态：硬件新品、前沿论文、开源生态、行业事件。
-> **最新一轮：2026-09 中下旬增量（09-12 ~ 09-21）**｜历史：2026-09 月报（09-11 前）、2026-06~08 双月报。
+> **最新一轮：2026-10-08 定向核验增量**｜历史：2026-09 中下旬增量、9 月月报、6-8 月双月报。
 > 事件锚点：WAIC 2026（7 月·上海）、RSS 2026（7 月·悉尼）、WRC 2026（8 月·北京）、**IROS 2026（9/27-10/1·匹兹堡）**、CoRL 2026（11 月·奥斯汀）。
+
+---
+
+# 📅 2026-10-08 定向核验增量
+
+标题、作者与首次提交日经 arXiv API 核验；公开实现状态另查项目页与官方 README。本轮不是历史条目的全面复核。
+
+| 论文 | 首次提交 | 贡献与可用性 |
+| --- | --- | --- |
+| [Temporal Visuo-Tactile Learning for Dexterous Grasp Stability](https://arxiv.org/abs/2610.10283) | 2026-10-07 | Ken Nakahara 等；以抬升前视觉、本体感觉和触觉预测稳定性，决定抬升或重抓。[官方仓库](https://github.com/lasr-lab/dexterous-grasp-stability)提供可视化与重采样工具；摘要称数据可用，但项目页和 README 仍写 Dataset coming soon，故不列为已下载验证的数据集。 |
+| [ReDex: Repairing Sim-to-Real Dexterous Policies by Finger-Level Compliant Interaction](https://arxiv.org/abs/2610.07525) | 2026-10-05 | Jinzhou Li 等；人工柔顺修正局部手指接触，其他手指继续运行冻结的基础策略，再用力观测和修正轨迹训练独立策略。论文报告翻物和转螺丝刀真机实验；本轮未核验公开实现。 |
+| [DexForge: High-Fidelity Physics-Informed Dexterous Retargeting](https://arxiv.org/abs/2610.06331) | 2026-10-05 | Meizhong Wang 等；接触感知运动学 + 力感知动力学重定向。[官方代码](https://github.com/wmz1226/DexForge)从准备好的 MANO 示教开始，提供 LEAP Hand 示例；视频重建不在该发布范围，MANO 需另行获取，MIT 仅覆盖项目原始代码。 |
+
+论文结果尚未在本仓库独立复现。触觉项目的代码 MIT 与数据 CC BY-NC-ND 4.0 分开声明；发布状态以实际可访问资源为准。
+
+---
+
+# 📅 2026-10-05 定向核验增量
+
+本轮为指定资源的增量核验，不代表已扫描或重新核验全部历史条目。
+
+| 资源 | 核验结果 | 一手来源 |
+| --- | --- | --- |
+| FlashDexRetarget: Accelerating Dexterous Manipulation Data Generation through Multi-Motion Retargeting | Kyungmin Lee 等，2026-10-01 提交；以共享参考条件策略批量重定向手-物动作。arXiv API 核对标题与日期，项目页仍标 **Code (coming soon)**；尚不列为可运行代码 | [arXiv:2610.01849](https://arxiv.org/abs/2610.01849) · [项目页](https://davian-robotics.github.io/FlashDexRetarget/) |
+| SPIDER retarget_full | 2026-09-22 发布，7,876 条成功右手轨迹；仅含成功样本，不能据此计算总体成功率 | [官方数据卡](https://huggingface.co/datasets/retarget/retarget_full) · [官方代码](https://github.com/facebookresearch/spider) |
+| LEAP Hand V1 | 修正 RSS 2023、CMU 与 16 电机关节；不再混用 V2 腱驱动参数 | [官方 V1 页面](https://v1.leaphand.com/) · [控制 API](https://github.com/leap-hand/LEAP_Hand_API) |
+| AmazingHand | 修正为四指 8-DoF、舵机内置与并联机构、无拉索；区分软件和机械设计许可 | [官方 README](https://github.com/pollen-robotics/AmazingHand) |
+| DEX-EE | 修正为 Shadow Robot 与 Google DeepMind 合作开发的商用三指平台，12 DoF；删除低成本开源手的归类 | [官方产品页](https://shadowrobot.com/dex-ee_series/) |
 
 ---
 

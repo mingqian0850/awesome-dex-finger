@@ -7,12 +7,12 @@
 
 | 项目 | Stars | 许可证 | 特点 | 链接 |
 | --- | --- | --- | --- | --- |
-| AmazingHand (AH!) | 2399 | Apache-2.0 | 8-DoF 低成本 3D 打印灵巧手，配套 Arduino/ROS 代码，社区活跃 | [pollen-robotics/AmazingHand](https://github.com/pollen-robotics/AmazingHand) |
+| AmazingHand (AH!) | 2407（2026-10-05） | 软件 Apache-2.0 / 机械 CC BY 4.0 | 8-DoF 四指 3D 打印手；舵机内置、并联机构、无拉索 | [pollen-robotics/AmazingHand](https://github.com/pollen-robotics/AmazingHand) |
 | Aero Hand Open | 968 | 自定义 | 可在家组装的 3D 打印灵巧手，舵机驱动，厂商同步售卖套件（**2026-09 组织迁至 Chestnut-Robotics**） | [Chestnut-Robotics/aero-hand-open](https://github.com/Chestnut-Robotics/aero-hand-open) |
 | HOPEJr | 830 | 自定义 | 开源 DIY 人形机器人整机（含灵巧手方案） | [TheRobotStudio/HOPEJr](https://github.com/TheRobotStudio/HOPEJr) |
 | BiDexHand | 255 | MIT | 16-DoF 仿生双手，开源机械设计 + 驱动 | [wengmister/BiDexHand](https://github.com/wengmister/BiDexHand) |
 | RUKA / RUKA-v2 | 199 / 28 | MIT | 腱驱动开源灵巧手（ICRA 2025），"用学习指导手设计"；v2 增加手腕与指外展 | [ruka-hand/RUKA](https://github.com/ruka-hand/RUKA) |
-| LEAP Hand (API/Sim) | 175 / 206 | MIT | 低成本 16-DOF 腱驱动拟人手（RSS 2023），CAD 全开源，支持 Manus 手套遥操作 | [leap-hand/LEAP_Hand_API](https://github.com/leap-hand/LEAP_Hand_API) · [LEAP_Hand_Sim](https://github.com/leap-hand/LEAP_Hand_Sim) |
+| LEAP Hand (API/Sim) | 175 / 206 | MIT | V1：16 个电机驱动关节的四指手（RSS 2023），CAD 全开源，支持 Manus 手套遥操作 | [leap-hand/LEAP_Hand_API](https://github.com/leap-hand/LEAP_Hand_API) · [LEAP_Hand_Sim](https://github.com/leap-hand/LEAP_Hand_Sim) |
 | Wuji Hand (武机科技) | 216 | Apache-2.0 | 手内重定向 PPO 训练 + sim-to-real 部署全套代码（手本体为商业产品） | [wuji-technology/wuji-mjlab](https://github.com/wuji-technology/wuji-mjlab) |
 | DexHand | 56 | 自定义 | 开源 DIY 人形手：机械图纸、BOM、装配教程；ROS2 见 dexhand_ros2_meta | [iotdesignshop/dexhand-mechanical-build](https://github.com/iotdesignshop/dexhand-mechanical-build) |
 | RAPID Hand | 54 | 自定义 | 中山大学：低成本、感知集成、面向通用机器人自主性的灵巧操作平台 | [SYSU-RoboticsLab/RAPID-Hand](https://github.com/SYSU-RoboticsLab/RAPID-Hand) |

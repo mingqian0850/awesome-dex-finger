@@ -2,10 +2,10 @@
 
 > 持续更新的灵巧手（Dexterous Hand / Dexterous Manipulation）领域资源仓库：SOTA 论文、开源硬件、开源软件、数据集与 Awesome 列表。
 
-灵巧手是具身智能（Embodied AI）与人形机器人（Humanoid Robot）的核心执行部件。本仓库系统性地收集了截至 2025 年该领域的前沿研究与开源生态，覆盖：
+灵巧手是具身智能（Embodied AI）与人形机器人（Humanoid Robot）的核心执行部件。本仓库持续收集该领域的研究与开源生态，最新人工增量核验为 2026-10-08，覆盖：
 
 - 📄 **SOTA 论文**：硬件设计、强化学习、模仿学习、遥操作、大模型驱动灵巧操作
-- 🦾 **硬件平台**：商用灵巧手（Shadow、Allegro、因时、帕西尼等）与开源硬件（LEAP Hand、DEX-EE、BiDexHand 等）
+- 🦾 **硬件平台**：商用灵巧手（Shadow、Allegro、因时、帕西尼等）与开源硬件（LEAP Hand、AmazingHand、BiDexHand 等）
 - 💻 **开源软件**：仿真环境（Isaac Gym/Lab、MuJoCo）、RL 训练框架、遥操作系统
 - 📊 **数据集与基准**：DexGraspNet、OakInk、ARCTIC、DexYCB 等
 - ⭐ **Awesome 列表**：社区维护的相关资源导航
@@ -20,23 +20,22 @@
 | [docs/control-and-data-collection.md](docs/control-and-data-collection.md) | 控制方法与数据采集方法（遥操作 / 视频学习 / 仿真合成） |
 | [docs/datasets.md](docs/datasets.md) | 数据集与基准平台 |
 | [docs/open-source.md](docs/open-source.md) | 开源项目清单（硬件 / 仿真 / 软件） |
-| [docs/latest-updates-2026h2.md](docs/latest-updates-2026h2.md) | 最新动态跟踪（2026-09 中下旬增量 + 9 月月报 + 6-8 月双月报） |
+| [docs/latest-updates-2026h2.md](docs/latest-updates-2026h2.md) | 最新动态跟踪（2026-10-08 核验增量 + 10-05 与更早历史记录） |
 | [docs/verification-2026-09.md](docs/verification-2026-09.md) | 论文核验附录（arXiv API 级核验：机构、会议录用、标题纠正） |
 | [awesome-lists.md](awesome-lists.md) | 相关 Awesome 列表导航 |
 | [scripts/](scripts/README.md) | 🛠️ 更新脚本（arXiv 论文扫描 + GitHub 数据刷新） |
 
-## ✨ 快速一览（截至 2025 年 SOTA 概览）
+## ✨ 快速一览（经典资源与近期增量）
 
 > 详细内容见各文档。
 
 ### 🦾 代表性开源硬件
-- [LEAP Hand](https://github.com/leaphand) — 低成本 20-DOF 腱驱动拟人手（V1/V2 Advanced），3D 打印全开源
-- [Shadow Robot DEX-EE](https://github.com/shadow-robot/dx_system) — Shadow 的低成本腱驱动灵巧手，开源系统配置
+- [LEAP Hand V1](https://v1.leaphand.com/) — CMU 的 RSS 2023 四指灵巧手，16 个电机驱动关节；V2 腱驱动系列需按独立版本查看
 - [BiDexHand](https://github.com/wengmister/BiDexHand) — 16-DoF 仿生灵巧手
-- [AmazingHand](https://github.com/pollen-robotics/AmazingHand) — Apache 2.0 腱驱动开源手
+- [AmazingHand](https://github.com/pollen-robotics/AmazingHand) — 8-DoF 四指手，内置舵机与并联机构、无拉索；软件 Apache-2.0，机械设计 CC BY 4.0
 
 ### 📄 代表性论文
-- [LEAP Hand](https://arxiv.org/abs/2309.06440)（RSS 2024）· [Bi-DexHands](https://arxiv.org/abs/2206.08686)（NeurIPS 2022）· [DexMimicGen](https://arxiv.org/abs/2410.24185)（ICRA 2025）
+- [LEAP Hand](https://arxiv.org/abs/2309.06440)（RSS 2023）· [Bi-DexHands](https://arxiv.org/abs/2206.08686)（NeurIPS 2022）· [DexMimicGen](https://arxiv.org/abs/2410.24185)（ICRA 2025）
 - VLA 基础模型：[π0](https://arxiv.org/abs/2410.24164)（Physical Intelligence, 2024）· [GR00T N1](https://arxiv.org/abs/2503.14734)（NVIDIA, 2025）· [RDT-1B](https://arxiv.org/abs/2410.07864)（清华, ICLR 2025）· [DexVLA](https://arxiv.org/abs/2502.05855)（CoRL 2025）
 
 ### ⭐ 代表性 Awesome 列表

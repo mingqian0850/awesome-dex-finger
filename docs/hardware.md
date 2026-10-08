@@ -7,7 +7,7 @@
 | 名称 | 厂商 | 自由度 | 驱动方式 | 特点 | 链接 |
 | --- | --- | --- | --- | --- | --- |
 | Shadow Dexterous Hand | Shadow Robot（英国） | 20 DOF / 24 关节 | 腱驱动（早期气动 Air Muscle，现电机） | 最经典拟人灵巧手，科研界事实标准，可配 BioTac 触觉指尖；约 $100k 级 | [robotsguide](https://robotsguide.com/robots/shadow) · [规格 PDF](https://shadowrobot.com/wp-content/uploads/2025/09/shadow_dexterous_hand_e_technical_specification.pdf) |
-| DEX-EE | Shadow Robot + 布里斯托大学 | 12 DOF | 腱驱动 | Shadow 低成本版，面向遥操作与 RL 研究，指尖力约 8-18 N | [originofbots](https://www.originofbots.com/humanoid-robot-hand/dex-ee-dexterous-hand-by-shadow-robot-company-robot-hand-specifications) |
+| DEX-EE / DEX-EE Chiral | Shadow Robot，与 Google DeepMind 合作开发 | 12 DOF（三指） | 驱动细节见官方规格书 | 面向长时间机器学习实验的耐用商用平台；不列为低成本开源硬件 | [官方产品与规格](https://shadowrobot.com/dex-ee_series/)（2026-10-05 核验） |
 | Allegro Hand V4/V5 | Wonik Robotics（韩国） | 16 DOF（四指） | 内置直流电机 + 齿轮 | 学术界使用最广的手之一，ROS 生态成熟；约 $20k 量级 | [Wonik 官网](https://www.wonikrobotics.com/robotics-hand) |
 | Tesla Optimus 手 | 特斯拉 | 22 DOF（v2 升级版） | 腱绳驱动 + 前臂电机舱、液冷 | 2024-11 展示升级版（演示为遥操作），公开 5 份灵巧手专利 | [electrek](https://electrek.co/2024/11/29/tesla-unveils-upgraded-optimus-robot-hand-but-impressive-demo-is-again-teleoperated/) |
 | Figure 02 手 | Figure AI | 约 16 DOF（媒体口径） | 电机/腱（未完全公开） | 第四代手部装置，已进入宝马工厂 | [sina](https://finance.sina.cn/2024-08-09/detail-inchywqp7825307.d.html) |
@@ -32,8 +32,8 @@
 
 | 名称 | 特点 | 链接 |
 | --- | --- | --- |
-| LEAP Hand (V1/V2 Advanced) | 约 $2000、16-DOF 腱驱、3D 打印全开源，学术圈标准配置 | [leaphand.com](https://www.leaphand.com/) |
-| AmazingHand | 8-DoF 低成本 3D 打印手（Apache-2.0），2299★ | [pollen-robotics/AmazingHand](https://github.com/pollen-robotics/AmazingHand) |
+| LEAP Hand V1 | 16 个电机驱动关节、四指，官方提供 CAD、URDF 和控制 API；RSS 2023，勿与 V2 腱驱动系列混写 | [V1 官方页](https://v1.leaphand.com/) · [API](https://github.com/leap-hand/LEAP_Hand_API) |
+| AmazingHand | 8-DoF 四指，内置舵机/并联机构、无拉索；软件 Apache-2.0，机械设计 CC BY 4.0 | [pollen-robotics/AmazingHand](https://github.com/pollen-robotics/AmazingHand) |
 | Aero Hand Open | 可在家组装的 3D 打印手，916★ | [TetherIA/aero-hand-open](https://github.com/TetherIA/aero-hand-open) |
 | BiDexHand | 16-DoF 仿生双手（MIT），249★ | [wengmister/BiDexHand](https://github.com/wengmister/BiDexHand) |
 | RUKA | 腱驱动开源手（ICRA 2025），200★ | [ruka-hand/RUKA](https://github.com/ruka-hand/RUKA) |

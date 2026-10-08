@@ -7,12 +7,13 @@
 | 论文 | 机构 | 年份 | 链接 | 贡献 |
 | --- | --- | --- | --- | --- |
 | Leap Hand V2 Advanced: Dexterous, Low-Cost Hybrid Rigid-Soft Hand | — | 2025 | [IEEE](https://ieeexplore.ieee.org/abstract/document/11203038) | V2 进阶版，刚柔混合、更轻更强 |
-| LEAP Hand: Low-Cost, Efficient, and Anthropomorphic Hand for Robot Learning | Stanford/CMU | 2023 (RSS 2024) | [arXiv:2309.06440](https://arxiv.org/abs/2309.06440) | 低成本 3D 打印拟人灵巧手，20 DOF 腱驱动，全套开源 |
+| LEAP Hand: Low-Cost, Efficient, and Anthropomorphic Hand for Robot Learning | CMU | 2023 (RSS 2023) | [arXiv:2309.06440](https://arxiv.org/abs/2309.06440) · [官方项目](https://v1.leaphand.com/) | V1 四指、16 个电机驱动关节；提供 CAD、URDF、API，与 V2 腱驱动系列分开记载 |
 
 ## 二、强化学习与灵巧操作
 
 | 论文 | 机构 | 年份 | 链接 | 贡献 |
 | --- | --- | --- | --- | --- |
+| ReDex: Repairing Sim-to-Real Dexterous Policies by Finger-Level Compliant Interaction | — | 2026-10 预印本 | [arXiv:2610.07525](https://arxiv.org/abs/2610.07525) | 手指级柔顺人工修正 + 力条件模仿学习，论文报告真机接触任务；未核验代码 |
 | VTDexManip: Visual-Tactile Pre-training and RL | GIST AI Lab | 2025 (ICLR) | [GitHub](https://github.com/gist-ailab/VTDexManip) | 视觉-触觉预训练 + 灵巧操作 RL |
 | Bi-DexHands: Towards Human-Level Bimanual Dexterous Manipulation with RL | PKU | 2022 (NeurIPS, TPAMI) | [arXiv:2206.08686](https://arxiv.org/abs/2206.08686) | 双手灵巧操作基准（Isaac Gym），20+ 任务 |
 | ADROIT: Learning Dexterous Manipulation with DAPG | UC Berkeley | 2018 (RSS) | [arXiv:1709.10087](https://arxiv.org/abs/1709.10087) | Shadow Hand 灵巧操作基准 + DAPG |
@@ -23,6 +24,8 @@
 
 | 论文 | 机构 | 年份 | 链接 | 贡献 |
 | --- | --- | --- | --- | --- |
+| DexForge: High-Fidelity Physics-Informed Dexterous Retargeting | — | 2026-10 预印本 | [arXiv:2610.06331](https://arxiv.org/abs/2610.06331) · [官方代码](https://github.com/wmz1226/DexForge) | 接触与力感知重定向；代码需准备好的 MANO 输入，未发布完整视频重建链 |
+| Temporal Visuo-Tactile Learning for Dexterous Grasp Stability | LASR Lab, TU Dresden | 2026-10 预印本 | [arXiv:2610.10283](https://arxiv.org/abs/2610.10283) · [官方仓库](https://github.com/lasr-lab/dexterous-grasp-stability) | 触觉时序预测 + 抬升/重抓门控；数据在官方 README 仍标即将发布（10-08） |
 | AgiBot World Colosseo | 智元 AgiBot | 2025 | [arXiv:2503.06669](https://arxiv.org/abs/2503.06669) | 百万级真机灵巧操作数据集 + 数据采集平台 |
 | ExoStart: Efficient Learning with Sensorized Exoskeleton Demonstrations | — | 2025 | [arXiv:2506.11775](https://arxiv.org/abs/2506.11775) | 外骨骼手套（复刻 DEX-EE 运动学）采集演示，高效灵巧学习 |
 | EgoDex: Learning Dexterous Manipulation from Egocentric Video | Apple | 2025 | [arXiv:2505.11709](https://arxiv.org/abs/2505.11709) | 第一视角视频学习灵巧操作 |
