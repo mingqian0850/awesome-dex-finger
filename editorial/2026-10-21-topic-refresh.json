@@ -1,0 +1,34 @@
+{
+  "reviewed_at": "2026-10-21",
+  "topic": "Dexterity updates: contact supervision and embodiment transfer",
+  "source_urls": [
+    "https://arxiv.org/abs/2610.04363",
+    "https://arxiv.org/abs/2610.19155",
+    "https://arxiv.org/abs/2610.20904",
+    "https://fact-1-0.github.io/",
+    "https://mengcaopku.github.io/EgoJEPA/"
+  ],
+  "validation_scope": "Primary-source inspection and document checks; no upstream execution.",
+  "preserved": "Historical review dates, automated feeds and repository visibility.",
+  "paper_records": [
+    {
+      "id": "http://arxiv.org/abs/2610.19155v1",
+      "title": "FACT: A Multimodal Force-Action-Track Foundation Model for Human-to-Robot Dexterity",
+      "published": "2026-10-13T20:21:52Z",
+      "updated": "2026-10-13T20:21:52Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2610.20904v1",
+      "title": "EgoJEPA: Beyond Retargeting for Dexterous Manipulation from Egocentric Videos",
+      "published": "2026-10-14T20:34:18Z",
+      "updated": "2026-10-14T20:34:18Z"
+    },
+    {
+      "id": "http://arxiv.org/abs/2610.04363v1",
+      "title": "TacOT: Learning Contact-Rich Dexterous Manipulation from Human Demonstrations via Tactile-Guided Optimal Transport",
+      "published": "2026-10-03T08:00:56Z",
+      "updated": "2026-10-03T08:00:56Z"
+    }
+  ],
+  "code_revisions": {}
+}

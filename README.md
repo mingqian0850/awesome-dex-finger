@@ -1,10 +1,12 @@
 # 🖐️ Awesome Dexterous Hand / 灵巧手资源大全
 
+[主题最新进展 · 2026-10-21 · 中文](docs/topic-progress-2026-10-21.zh-CN.md) · [English](docs/topic-progress-2026-10-21.en.md)
+
 [数据与工业操作学习补充 · 中文](docs/industrial-contact-data.zh-CN.md) · [English](docs/industrial-contact-data.en.md)
 
 > 持续更新的灵巧手（Dexterous Hand / Dexterous Manipulation）领域资源仓库：SOTA 论文、开源硬件、开源软件、数据集与 Awesome 列表。
 
-灵巧手是具身智能（Embodied AI）与人形机器人（Humanoid Robot）的核心执行部件。本仓库持续收集该领域的研究与开源生态，最新人工增量核验为 2026-10-08，覆盖：
+灵巧手是具身智能（Embodied AI）与人形机器人（Humanoid Robot）的核心执行部件。本仓库持续收集该领域的研究与开源生态，最新人工主题增量核验为 2026-10-21（历史条目保留原核验范围），覆盖：
 
 - 📄 **SOTA 论文**：硬件设计、强化学习、模仿学习、遥操作、大模型驱动灵巧操作
 - 🦾 **硬件平台**：商用灵巧手（Shadow、Allegro、因时、帕西尼等）与开源硬件（LEAP Hand、AmazingHand、BiDexHand 等）
